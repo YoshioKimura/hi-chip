@@ -26,7 +26,7 @@
 </head>
 <body id="main">
   <div class="ui inverted large borderless fluid menu column">
-    <a class="header item" href="http://localhost/gs/dev13/PHP04/timeline.php">HiChip</a>
+    <a class="header item" href="/timeline.php">HiChip</a>
     <div class="right menu">
         <div class="ui dropdown item">
             <div class="header">

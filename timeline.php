@@ -7,9 +7,27 @@ chkSsid();
 $pdo = db_con();
 $user_id = $_SESSION["user_id"];
 //２．データ登録SQL作成
-$stmt = $pdo->prepare("SELECT praises.praise_id,praises.praise_content,praises.sent_point,praises.praise_created_at, (gs_user_table.name) AS praiser_id, (gs_user_table1.name) AS praisee_id
-FROM (praises LEFT JOIN gs_user_table ON praises.praiser_id = gs_user_table.user_id) LEFT JOIN gs_user_table AS gs_user_table1 ON praises.praisee_id = gs_user_table1.user_id
-ORDER BY praises.praise_created_at DESC");
+$stmt = $pdo->prepare("SELECT
+praises.praise_id,
+praises.praise_content,
+praises.sent_point,
+praises.praise_created_at,
+praises.praiser_id,
+praises.praisee_id,
+(gs_user_table.name) AS praiser_name,
+(gs_user_table1.name) AS praisee_name
+FROM
+(
+    praises
+    LEFT JOIN
+        gs_user_table
+    ON  praises.praiser_id = gs_user_table.user_id
+)
+LEFT JOIN
+    gs_user_table AS gs_user_table1
+ON  praises.praisee_id = gs_user_table1.user_id
+ORDER BY
+praises.praise_created_at DESC");
 
 $status = $stmt->execute();
 //３．データ表示
@@ -61,8 +79,8 @@ if ($status == false) {
             <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
           </div>
           <div class="content">
-            <div class="summary">
-            '.$result["praiser_id"].'さんから<a>'.$result["praisee_id"].'</a> 拍手 <a>coworker</a> group.
+            <div class="summary"> <a href="/hi-chip/profile_received.php$id="'.$result["praiser_id"].'">
+            '.$result["praiser_name"].'さん</a>から<a href="/hi-chip/profile_received.php$id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a> 拍手 <a>coworker</a> group.
               <div class="date">'.$result["praise_created_at"].'
               
               </div>
@@ -166,7 +184,7 @@ body {
       <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
       </div>
       <div class="navbar-header">
-      <a class="navbar-brand" href="profile.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
+      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
       </div>
             <div class="navbar-header">
       現在のポイント数：<?php renderPoint($pdo); ?>
@@ -179,9 +197,30 @@ body {
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
-<div>
-<div class="ui feed"><?=$view?></div>
+
+
+<div class="ui secondary pointing menu">
+  <a class="item active" data-urlStr="timeline.php"> 
+    すべて
+  </a>
+  <a class="item " data-urlStr="timeline_received.php"> 
+    もらった
+  </a>
+  <a class="item" data-urlStr="timeline_sent.php"> 
+    おくった
+  </a>
+  <a class="item " data-urlStr="timeline_clapped.php"> 
+    拍手した
+  </a>
+
 </div>
+
+
+
+
+
+
+<div class="ui feed"><?=$view?></div>
 <!-- Main[End] -->
 
 
@@ -214,6 +253,17 @@ body {
           });
       });
   });
+
+
+  $(".menu .item").click(function () {
+            $(".item").removeClass('active');
+            $(this).addClass('active');
+            var urlStr = $(this).attr('data-urlStr');
+          location.href = "http://localhost/hi-chip/" + urlStr;
+
+        })
+
+
 
 
 </script>

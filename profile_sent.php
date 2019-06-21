@@ -5,7 +5,7 @@ chkSsid();
 $pdo = db_con();
 
 $user_id = $_GET["user_id"];
-
+echo $user_id;
 //２．データ登録SQL作成
 $stmt = $pdo->prepare("SELECT * FROM gs_user_table");
 $status = $stmt->execute();
@@ -76,10 +76,38 @@ if ($status == false) {
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
-<div>
-    <div class="container jumbotron"><?=$view?></div>
+
+
+<div class="ui secondary pointing menu">
+  <a class="item " data-urlStr="profile_received.php"> 
+    もらった
+  </a>
+  <a class="item active" data-urlStr="profile_sent.php"> 
+    おくった
+  </a>
+  <a class="item " data-urlStr="profile_clapped.php"> 
+    拍手した
+  </a>
+
 </div>
+    <div class="container jumbotron"><?=$view?></div>
+
 <!-- Main[End] -->
+
+
+<script>
+  $(".menu .item").click(function () {
+            $(".item").removeClass('active');
+            $(this).addClass('active');
+            var urlStr = $(this).attr('data-urlStr');
+            location.href = "http://localhost/hi-chip/" + urlStr + "?user_id=<?= $user_id ?>";
+
+  });
+
+
+
+
+</script>
 
 </body>
 </html>

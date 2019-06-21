@@ -80,8 +80,8 @@ if ($status == false) {
             <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
           </div>
           <div class="content">
-            <div class="summary"> <a href="/hi-chip/profile.php$id="'.$result["praiser_id"].'">
-            '.$result["praiser_name"].'さん</a>から<a href="/hi-chip/profile.php$id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a> 拍手 <a>coworker</a> group.
+            <div class="summary"> <a href="/hi-chip/profile_received.php$id="'.$result["praiser_id"].'">
+            '.$result["praiser_name"].'さん</a>から<a href="/hi-chip/profile_received.php$id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a> 拍手 <a>coworker</a> group.
               <div class="date">'.$result["praise_created_at"].'
               
               </div>
@@ -185,7 +185,7 @@ body {
       <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
       </div>
       <div class="navbar-header">
-      <a class="navbar-brand" href="profile.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
+      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
       </div>
             <div class="navbar-header">
       現在のポイント数：<?php renderPoint($pdo); ?>

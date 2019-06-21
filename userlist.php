@@ -61,7 +61,7 @@ if ($status == false) {
       <a class="navbar-brand" href="timeline.php">タイムラインへ</a>
       </div>
       <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">現在の保有ポイント数：<?php renderPoint($pdo); ?></a>
+      <a class="navbar-brand" href="userlist.php">現在の保有ポイント数：<?php renderTotalPointOfThisMonth($pdo); ?></a>
       </div>
     </div>
   </nav>

@@ -42,9 +42,9 @@ $praisee_id = $_GET["praisee_id"];
   <div class="jumbotron">
    <fieldset>
     <legend>称賛シート</legend>
-    <legend>残りのポイント数：<?= $_SESSION["point"] ?></legend>
+    <legend>残りのポイント数：<?= $_SESSION["current_available_point"] ?></legend>
     <div class="field">
-    <label>上げるポイント数：</label>
+    <label>送るポイント数：</label>
     <input type="text" id="inputpoint" placeholder="120" name="sent_point" required>
   </div>
 
@@ -74,9 +74,9 @@ $('button[type="submit"]').on('click',function(){
     return false;
   }
 
-  var point = <?= $_SESSION["point"] ?>;
+  var currentAvailablePoint = <?= $_SESSION["current_available_point"] ?>;
   var inputPoint = $("#inputpoint").val();
-  if(point < inputPoint){
+  if(currentAvailablePoint < inputPoint){
     alert("ポイントが足りません");
     return false;
   }

@@ -6,7 +6,7 @@ $lpw = $_POST["lpw"];
 
 $default_point = 400;
 
-$point = $default_point;
+$current_available_point = $default_point;
 $kanri_flg = 0;
 
 
@@ -17,7 +17,7 @@ $pdo = db_con();
 //パスワードハッシュ化
 $hashed_lpw = password_hash($lpw,PASSWORD_DEFAULT );
 //３．データ登録SQL作成
-$sql = "INSERT INTO gs_user_table(name,email,lpw,kanri_flg,point,indate)VALUES(:name,:email,:lpw,$kanri_flg,$point,sysdate())";
+$sql = "INSERT INTO gs_user_table(name,email,lpw,kanri_flg,current_available_point,indate)VALUES(:name,:email,:lpw,$kanri_flg,$current_available_point,sysdate())";
 $stmt = $pdo->prepare($sql);
 $stmt->bindValue(':name', $name, PDO::PARAM_STR); //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':email', $email, PDO::PARAM_STR); //Integer（数値の場合 PDO::PARAM_INT)

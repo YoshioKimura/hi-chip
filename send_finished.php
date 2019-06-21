@@ -63,7 +63,7 @@ if ($status == false) {
       <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
       </div>
       <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">現在の保有ポイント数：<?php renderPoint($pdo); ?></a>
+      <a class="navbar-brand" href="userlist.php">現在の保有ポイント数：<?php renderTotalPointOfThisMonth($pdo); ?></a>
       </div>
       <div class="navbar-header">
       <a class="navbar-brand" href="logout.php">ログアウト</a>

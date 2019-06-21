@@ -30,10 +30,10 @@ $stmt->bindValue(':praiser_id', $praiser_id, PDO::PARAM_INT);
 $stmt->bindValue(':praisee_id', $praisee_id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
-$sql2 = "update gs_user_table SET point =
+$sql2 = "update gs_user_table SET total_point_this_month =
   case user_id
-    WHEN $praiser_id THEN `point` - $sent_point
-    WHEN $praisee_id THEN `point` + $sent_point
+    WHEN $praiser_id THEN `total_point_this_month` - $sent_point
+    WHEN $praisee_id THEN `total_point_this_month` + $sent_point
   END
 WHERE user_id IN ($praiser_id,$praisee_id)";
 

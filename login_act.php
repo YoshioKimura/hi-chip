@@ -49,7 +49,7 @@ if( password_verify( $lpw , $val["lpw"] ) ){
   $_SESSION["kanri_flg"] = $val['kanri_flg'];
   $_SESSION["name"]      = $val['name'];
   $_SESSION["user_id"]      = $val['user_id'];
-  $_SESSION["point"]      = $val['point'];
+  $_SESSION["current_available_point"]      = $val['current_available_point'];
   header('Location: timeline.php');
 }else{
   //Login失敗時(Logout経由)

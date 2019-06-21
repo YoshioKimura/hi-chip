@@ -1,11 +1,11 @@
-
 <?php
 session_start();
 include "funcs.php";
-include "header.php";
+
 chkSsid();
 $pdo = db_con();
 $user_id = $_SESSION["user_id"];
+
 //２．データ登録SQL作成
 $stmt = $pdo->prepare("SELECT
 praises.praise_id,
@@ -30,6 +30,7 @@ WHERE praises.praisee_id = $user_id
 ORDER BY
 praises.praise_created_at DESC");
 
+
 $status = $stmt->execute();
 //３．データ表示
 $view = "";
@@ -44,11 +45,11 @@ if ($status == false) {
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
-      $praise_id = $result['praise_id'];
-      // DBから投稿データを取得
-      $dbPostData = getPostData($praise_id);
-      // DBからいいねの数を取得
-      $dbPostGoodNum = count(getGood($praise_id));
+    //   $praise_id = $result['praise_id'];
+    //   DBから投稿データを取得
+    //   $dbPostData = getPostData($praise_id);
+    //   DBからいいねの数を取得
+    //   $dbPostGoodNum = count(getGood($praise_id));
         // $view .= '<p>';
         // $view .= '</a>';
         //     $view .= '<a href="user_praise.php?praisee_id='.$result["praise_id"].'">';
@@ -76,20 +77,22 @@ if ($status == false) {
 
         $view .= '
         <div class="event">
-          <div class="label">
-            <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
-          </div>
-          <div class="content">
-            <div class="summary"> <a href="/hi-chip/profile_received.php$id="'.$result["praiser_id"].'">
-            '.$result["praiser_name"].'さん</a>から<a href="/hi-chip/profile_received.php$id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a> 拍手 <a>coworker</a> group.
-              <div class="date">'.$result["praise_created_at"].'
-              
-              </div>
-              '.$result["sent_point"].'
+            <div class="label"> 
+                <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg"> 
             </div>
-          </div>
+            <div class="content">
+                <div class="summary"> 
+                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
+                    <div class="date"> 2019-06-14 18:38 </div>
+                </div>
+                <div class="extra text"> '.$result["praise_content"].' </div>
+                <!--
+                <div class="meta">
+                    <a class="like"> <i class="like icon"></i> 5 Likes </a>
+                </div> -->
+            </div>
         </div>';
-
     }
 }
 ?>
@@ -108,7 +111,6 @@ if ($status == false) {
 -->
 
 <!--<style>div{padding: 10px;font-size:16px;}</style>-->
-
 
 
 </head>
@@ -150,16 +152,66 @@ body {
   padding-bottom:30px !important;
   border-top:solid 1px #f0f0f0 !important;
 }
+
+.h20{
+   height:20px !important;
+}
+
+.inverted .header,
+.inverted .item{
+  color:#000000de !important;
+  padding-left:20px !important;
+}
 </style>
 
 
 
+         <?php include "sidebar.php"; ?>
+ 
+        
+        <div class="test">
+        <?php include "header.php"; ?>
 
 
-<body id="main">
-<!-- Head[Start] -->
+        <div class="ui secondary pointing menu" style="position: relative;
+    left: 250px;
+    top: 97px;
+    width: 500px;">
+                <a class="item " data-urlStr="timeline.php"> 
+                    すべて
+                </a>
+                <a class="item active" data-urlStr="timeline_received.php"> 
+                    もらった
+                </a>
+                <a class="item " data-urlStr="timeline_sent.php"> 
+                    おくった
+                </a>
+                <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
+                    拍手した
+                </a> -->
+
+        </div>
+
+        <div class="wrapper_content">
+
+        <div class="ui feed" style="margin-left: 250px;
+                                    height: 80vh;
+                                    overflow: scroll;
+                                    position: fixed;
+                                    bottom: 0;">
+            <?=$view?>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+
+
 <header>
 
+<body id="main">
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -170,7 +222,7 @@ body {
       <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
       </div>
             <div class="navbar-header">
-      現在のポイント数：<?php renderPoint($pdo); ?>
+      現在のポイント数：<?php renderTotalPointOfThisMonth($pdo); ?>
       </div>
 
     </div>
@@ -182,35 +234,13 @@ body {
 <!-- Main[Start] -->
 
 
-<div class="ui secondary pointing menu">
-  <a class="item" data-urlStr="timeline.php"> 
-    すべて
-  </a>
-  <a class="item active" data-urlStr="timeline_received.php"> 
-    もらった
-  </a>
-  <a class="item" data-urlStr="timeline_sent.php"> 
-    おくった
-  </a>
-  <a class="item " data-urlStr="timeline_clapped.php"> 
-    拍手した
-  </a>
-
-</div>
-
-
-
-
-
-
-<div class="ui feed"><?=$view?></div>
 <!-- Main[End] -->
 
 
 <script>
   $(function(){
       var $good = $('.btn-good'), //いいねボタンセレクタ
-                  goodPostId; //投稿ID
+      goodPostId; //投稿ID
       $good.on('click',function(e){
           e.stopPropagation();
           var $this = $(this);
@@ -242,11 +272,8 @@ body {
             $(".item").removeClass('active');
             $(this).addClass('active');
             var urlStr = $(this).attr('data-urlStr');
-          location.href = "http://localhost/hi-chip/" + urlStr;
+          location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr;
     })
-
-
-
 
 </script>
 

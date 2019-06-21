@@ -15,12 +15,12 @@
                     <div class="header"> <a href=""> タイムライン</a></div>
                 </div>
                 <div class="item">
-                    <div class="header">設定画面</div>
+                    <div class="header"><a href="">マイページ</a></div>
                 </div>
                 <div class="item">
                     <div class="header">プロローグ</div>
                 </div>
-                <div class="item">
+                <!-- <div class="item">
                     <div class="header">よくある質問</div>
                 </div>
                 <div class="item">
@@ -28,6 +28,6 @@
                 </div>
                 <div class="item">
                     <div class=" header">名投稿まとめ</div>
-                </div>
+                </div> -->
             </div>
 </div>

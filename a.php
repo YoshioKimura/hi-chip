@@ -2,32 +2,15 @@
 <?php
 session_start();
 include "funcs.php";
-
-chkSsid();
+include "header.php";
+// chkSsid();
 $pdo = db_con();
+$_SESSION["user_id"] = 56;
 $user_id = $_SESSION["user_id"];
 //２．データ登録SQL作成
-$stmt = $pdo->prepare("SELECT
-praises.praise_id,
-praises.praise_content,
-praises.sent_point,
-praises.praise_created_at,
-praises.praiser_id,
-praises.praisee_id,
-(gs_user_table.name) AS praiser_name,
-(gs_user_table1.name) AS praisee_name
-FROM
-(
-    praises
-    LEFT JOIN
-        gs_user_table
-    ON  praises.praiser_id = gs_user_table.user_id
-)
-LEFT JOIN
-    gs_user_table AS gs_user_table1
-ON  praises.praisee_id = gs_user_table1.user_id
-ORDER BY
-praises.praise_created_at DESC");
+$stmt = $pdo->prepare("SELECT praises.praise_id,praises.praise_content,praises.sent_point,praises.praise_created_at, (gs_user_table.name) AS praiser_id, (gs_user_table1.name) AS praisee_id
+FROM (praises LEFT JOIN gs_user_table ON praises.praiser_id = gs_user_table.user_id) LEFT JOIN gs_user_table AS gs_user_table1 ON praises.praisee_id = gs_user_table1.user_id
+ORDER BY praises.praise_created_at DESC");
 
 $status = $stmt->execute();
 //３．データ表示
@@ -80,9 +63,7 @@ if ($status == false) {
           </div>
           <div class="content">
             <div class="summary">
-            <a href="http://localhost/gs/dev13/hi-chip/profile.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>
-                さんから<a href="http://localhost/gs/dev13/hi-chip/profile.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>
-                さんへ 拍手 <a>coworker</さんへ> group.
+            '.$result["praiser_id"].'さんから<a>'.$result["praisee_id"].'</a> 拍手 group.
               <div class="date">'.$result["praise_created_at"].'</div>
               '.$result["sent_point"].'
             </div>
@@ -104,13 +85,6 @@ if ($status == false) {
 <title>timeline</title>
 <link rel="stylesheet" href="css/range.css">
 <script src="js/icon.js"></script>
-<!--
-<script src="js/jquery-2.1.3.min.js"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
--->
-
-<!--<style>div{padding: 10px;font-size:16px;}</style>-->
-
 
 </head>
 
@@ -152,66 +126,114 @@ body {
   border-top:solid 1px #f0f0f0 !important;
 }
 
-.h20{
-   height:20px !important;
-}
+    .item{
+        color:#000000de !important;
+    }
 
-.inverted .header,
-.inverted .item{
-  color:#000000de !important;
-  padding-left:20px !important;
-}
+    .sidebar{
+        box-shadow: 0 0 20px rgba(20, 31, 30, 0.15);
+    }
+
+    .ui.sidebar{
+      position:relative !important;
+    }
 </style>
 
 
-
-         <?php include "sidebar.php"; ?>
- 
-        
-        <div class="test" style="height: 100vh;">
-        <?php include "header.php"; ?>
-
-
-        <div class="ui secondary pointing menu">
-                <a class="item active" data-urlStr="timeline.php"> 
-                    すべて
-                </a>
-                <a class="item " data-urlStr="timeline_received.php"> 
-                    もらった
-                </a>
-                <a class="item " data-urlStr="timeline_sent.php"> 
-                    おくった
-                </a>
-                <a class="item" data-urlStr="timeline_clapped.php"> 
-                    拍手した
-                </a>
-
-        </div>
-
-
-
-        <div class="ui feed" style="margin-left: 250px;overflow: scroll;"><?=$view?></div>
-        </div>
-        </div>
 
 
 
 <body id="main">
 <!-- Head[Start] -->
+<header>
 
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
+      <div id="sent_btn"> 送信する！ </div>
+      </div>
+      <div class="navbar-header">
+      <a class="navbar-brand" href="profile.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["user_id"] ?> </a>
+      </div>
+            <div class="navbar-header">
+      現在のポイント数：<?php renderPoint($pdo); ?>
+      </div>
+
+    </div>
+    
+  </nav>
+</header>
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
-<div>
 
+<div class="wrapper"  style="display:flex">
+        <div class="ui vertical inverted sidebar menu left overlay visible" id="toc" style="background-color: #fff">
+            <div class="item">
+                <a class="ui logo icon image" href="/"> 
+                   
+                    <b>UI Docs</b>
+                </a>
+             </div>
+            <a class="item" href="/introduction/getting-started.html"> 
+                <b>Getting Started</b> 
+            </a>
+            <a class="item" href="/introduction/new.html"> New in 2.4 </a>
+            <div class="item">
+                <div class="header">Introduction</div>
+            </div>
+            <div class="item">
+                <div class="header">Usage</div>
+  
+            </div>
+            <div class="item">
+                <div class=" header">Globals</div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- <img src="img/favicon2.png" alt=""> -->
+
+<div class="ui feed"><?=$view?>
+</div>
 </div>
 <!-- Main[End] -->
+
+<!-- <div class="ui dimmer modals page transition visible active" style="display: flex !important;"><div class="ui standard test modal transition visible active" style="display: block !important;">
+    <div class="header">
+      Select a Photo
+    </div>
+    <div class="image content">
+
+
+
+      <div class="description">
+        <div class="ui header">Default Profile Image</div>
+        <p>We've found the following <a href="https://www.gravatar.com" target="_blank">gravatar</a> image associated with your e-mail address.</p>
+        <p>Is it okay to use this photo?</p>
+      </div>
+    </div>
+    <div class="actions">
+      <div class="ui black deny button">
+        Nope
+      </div>
+      <div class="ui positive right labeled icon button">
+        Yep, that's me
+        <i class="checkmark icon"></i>
+      </div>
+    </div>
+  </div>
+</div> -->
 
 
 <script>
   $(function(){
       var $good = $('.btn-good'), //いいねボタンセレクタ
-      goodPostId; //投稿ID
+                  goodPostId; //投稿ID
       $good.on('click',function(e){
           e.stopPropagation();
           var $this = $(this);
@@ -236,15 +258,17 @@ body {
               console.log('Ajax Error');
           });
       });
+
+      $("#sent_btn").on('click',function(){
+        $('.small .modal').modal('show');
+      });
+
+
+
+
+
+
   });
-
-
-  $(".menu .item").click(function () {
-            $(".item").removeClass('active');
-            $(this).addClass('active');
-            var urlStr = $(this).attr('data-urlStr');
-          location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr;
-        })
 
 
 </script>

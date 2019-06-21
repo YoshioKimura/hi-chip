@@ -67,69 +67,13 @@
                         <div class="ui left icon input"> <i class="lock icon"></i>
                             <input type="password" name="lpw" placeholder="Password" value="hogehoge"> </div>
                     </div>
-
-
-
-
                     <div class="ui fluid large teal submit button">Login</div>
                 </div>
                 <div class="ui error message"></div>
             </form>
             <div class="ui message"> New to us? <a href="register2.php">Register</a> </div>
         </div>
-    </div>
-
-
-    <?php
-session_start();
-date_default_timezone_set('Asia/Tokyo');
-
-require_once 'php-graph-sdk-master/src/Facebook/autoload.php';
-
-$fb = new Facebook\Facebook([
-	'app_id' => 'アプリID',
-	'app_secret' => 'App Secret',
-	'default_graph_version' => 'v2.7'
-]);
-
-$helper = $fb->getRedirectLoginHelper();
-
-$scope = ['public_profile'];
-$link = $helper->getLoginUrl( 'https://gray-code.com/fb/callback.php', $scope);
-?>
-<a href="<?php echo htmlspecialchars($link); ?>">Login</a>
-
-          
-    <script>
-//   window.fbAsyncInit = function() {
-
-//     FB.init({
-//       appId      : '479803739258879',
-//       cookie     : true,
-//       xfbml      : true,
-//       version    : 'v3.3'
-//     });
-      
-//     FB.AppEvents.logPageView();
-//     FB.getLoginStatus(function(response) {
-//         console.log(response);
-//         statusChangeCallback(response);
-//     });
-      
-//   };
-
-//   (function(d, s, id){
-//      var js, fjs = d.getElementsByTagName(s)[0];
-//      if (d.getElementById(id)) {return;}
-//      js = d.createElement(s); js.id = id;
-//      js.src = "https://connect.facebook.net/en_US/sdk.js";
-//      fjs.parentNode.insertBefore(js, fjs);
-//    }(document, 'script', 'facebook-jssdk'));
-
-
-
-</script>
-    
+    </div>            
     <script>
         $(document).ready(function () {
             $('.dropdown').dropdown();

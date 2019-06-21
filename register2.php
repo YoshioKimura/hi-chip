@@ -75,7 +75,7 @@
         Register your account
       </div>
     </h2>
-            <form action="login_act.php" method="POST" class="ui large form">
+            <form action="user_insert.php" method="POST" class="ui large form">
                 <div class="ui stacked secondary  segment">
                     <div class="field">
                         <div class="ui left icon input"> <i class="user icon"></i>

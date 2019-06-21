@@ -1,33 +1,38 @@
 
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--<link rel="stylesheet" href="css/range.css">-->
-<!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
-<!--<style>div{padding: 10px;font-size:16px;}</style>-->
-<title>HiChip</title>
 
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
-<link rel="stylesheet" href="css/all.css"/>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+<?php include "layouts/head.php" ?>
 
 <style>
     .ui.large.menu{
       margin-top:0;
     }
-    
+    .h20{
+     /* height:20px !important; */
+    }
+
+    .test{
+        overflow-x: hidden;
+    }
+        .h20{
+        /* margin:0 -200%;
+        padding:0 200%; */
+        /* background: linear-gradient(#ffffff 0%, #ff6666 100%); */
+        text-align: center;
+        }
+        .h20 div{
+        /* padding:1em; */
+        }
+        
 </style>
 
 </head>
 <body id="main">
-  <div class="ui inverted large borderless fluid menu column">
-    <a class="header item" href="/timeline.php">HiChip</a>
+
+  <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);position:fixed;" >
+    
     <div class="right menu">
+
+        
         <div class="ui dropdown item">
             <div class="header">
                 <h4>MENU</h4>
@@ -38,7 +43,7 @@
                 <a href="timeline.php" style="color:#111">
                     <small >
                         <i class="th icon"></i>
-                        タイムライン
+                        <a class="header item" href="/timeline.php">タイムライン</a>
                     </small>
                 </a>
                 </div>
@@ -46,7 +51,8 @@
                 <a href="userlist.php" style="color:#111">
                     <small>
                         <i class="clipboard outline icon"></i>
-                        褒める相手を選ぶ
+                        
+                        <a class="header item" href="/timeline.php">褒める相手を選ぶ</a>
                     </small>
                     </a>
                 </div>
@@ -70,9 +76,6 @@
     
 </script>
 
-    </body>
-    
-</html>
 
 
 <!-- Head[End] -->

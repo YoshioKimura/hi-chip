@@ -45,13 +45,13 @@ $praisee_id = $_GET["praisee_id"];
     <legend>残りのポイント数：<?= $_SESSION["point"] ?></legend>
     <div class="field">
     <label>上げるポイント数：</label>
-    <input type="text" id="inputpoint" placeholder="120" name="sent_point">
+    <input type="text" id="inputpoint" placeholder="120" name="sent_point" required>
   </div>
 
          
      <div class="field">
     <label>コメント</label>
-    <textArea name="praise_content" rows="4" cols="40">すごい</textArea>
+    <textArea name="praise_content" rows="4" cols="40" placeholder="ユーザーヒアリングとディスカッションにお付き合い頂きありがとうございました！！  " required></textArea>
   </div>
      <input type="hidden" name="praisee_id" value="<?= $praisee_id ?>">
      <button class="ui button" value="送信" type="submit">Submit</button>

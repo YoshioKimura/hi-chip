@@ -160,6 +160,26 @@ body {
 <header>
 
 
+<i class="ambulance icon"></i>
+<i class="bicycle icon"></i>
+<i class="bus icon"></i>
+<i class="car icon"></i>
+<i class="fighter jet icon"></i>
+<i class="motorcycle icon"></i>
+<i class="paper plane icon"></i>
+<i class="paper plane outline icon"></i>
+<i class="plane icon"></i>
+<i class="rocket icon"></i>
+<i class="ship icon"></i>
+<i class="shopping cart icon"></i>
+<i class="space shuttle icon"></i>
+<i class="subway icon"></i>
+<i class="taxi icon"></i>
+<i class="train icon"></i>
+<i class="truck icon"></i>
+<i class="wheelchair icon"></i>
+
+
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -196,6 +216,7 @@ body {
   </a>
 
 </div>
+
 
 
 <div class="ui feed"><?=$view?></div>
@@ -237,7 +258,8 @@ body {
             $(".item").removeClass('active');
             $(this).addClass('active');
             var urlStr = $(this).attr('data-urlStr');
-          location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr;
+          location.href = "http://localhost/hi-chip/" + urlStr;
+
         })
 
 

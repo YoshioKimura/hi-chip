@@ -260,7 +260,7 @@ body {
             $(".item").removeClass('active');
             $(this).addClass('active');
             var urlStr = $(this).attr('data-urlStr');
-          location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr;
+          location.href = "http://localhost/hi-chip/" + urlStr;
     })
 
 

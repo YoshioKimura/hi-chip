@@ -84,6 +84,11 @@ if ($status == false) {
                 さんから<a href="http://localhost/gs/dev13/hi-chip/profile.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>
                 さんへ 拍手 <a>coworker</さんへ> group.
               <div class="date">'.$result["praise_created_at"].'</div>
+            <div class="summary"> <a href="/hi-chip/profile_received.php$id="'.$result["praiser_id"].'">
+            '.$result["praiser_name"].'さん</a>から<a href="/hi-chip/profile_received.php$id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a> 拍手 <a>coworker</a> group.
+              <div class="date">'.$result["praise_created_at"].'
+              
+              </div>
               '.$result["sent_point"].'
             </div>
             <div>
@@ -197,14 +202,72 @@ body {
 
 
 <body id="main">
-<!-- Head[Start] -->
 
+<header>
+
+<i class="ambulance icon"></i>
+<i class="bicycle icon"></i>
+<i class="bus icon"></i>
+<i class="car icon"></i>
+<i class="fighter jet icon"></i>
+<i class="motorcycle icon"></i>
+<i class="paper plane icon"></i>
+<i class="paper plane outline icon"></i>
+<i class="plane icon"></i>
+<i class="rocket icon"></i>
+<i class="ship icon"></i>
+<i class="shopping cart icon"></i>
+<i class="space shuttle icon"></i>
+<i class="subway icon"></i>
+<i class="taxi icon"></i>
+<i class="train icon"></i>
+<i class="truck icon"></i>
+<i class="wheelchair icon"></i>
+
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+      <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
+      </div>
+      <div class="navbar-header">
+      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
+      </div>
+            <div class="navbar-header">
+      現在のポイント数：<?php renderPoint($pdo); ?>
+      </div>
+
+    </div>
+    
+  </nav>
+</header>
 <!-- Head[End] -->
 
 <!-- Main[Start] -->
-<div>
+
+
+<div class="ui secondary pointing menu">
+  <a class="item active" data-urlStr="timeline.php"> 
+    すべて
+  </a>
+  <a class="item " data-urlStr="timeline_received.php"> 
+    もらった
+  </a>
+  <a class="item" data-urlStr="timeline_sent.php"> 
+    おくった
+  </a>
+  <a class="item " data-urlStr="timeline_clapped.php"> 
+    拍手した
+  </a>
+>>>>>>> 3d948739812acd13eb72396d97ee247cf54aa86a
 
 </div>
+
+
+
+
+
+
+<div class="ui feed"><?=$view?></div>
 <!-- Main[End] -->
 
 
@@ -245,7 +308,6 @@ body {
             var urlStr = $(this).attr('data-urlStr');
           location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr;
         })
-
 
 </script>
 

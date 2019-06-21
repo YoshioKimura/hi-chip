@@ -154,7 +154,7 @@ body {
       <div id="sent_btn"> 送信する！ </div>
       </div>
       <div class="navbar-header">
-      <a class="navbar-brand" href="profile.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["user_id"] ?> </a>
+      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["user_id"] ?> </a>
       </div>
             <div class="navbar-header">
       現在のポイント数：<?php renderPoint($pdo); ?>
@@ -262,12 +262,6 @@ body {
       $("#sent_btn").on('click',function(){
         $('.small .modal').modal('show');
       });
-
-
-
-
-
-
   });
 
 

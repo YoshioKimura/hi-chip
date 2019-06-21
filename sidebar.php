@@ -12,7 +12,7 @@
 
                 <div class="item">
                 
-                    <div class="header"> <a href="/timeline.php"> タイムライン</a></div>
+                    <div class="header"> <a href=""> タイムライン</a></div>
                 </div>
                 <div class="item">
                     <div class="header">設定画面</div>

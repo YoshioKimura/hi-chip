@@ -73,29 +73,22 @@ if ($status == false) {
         // $view .=  '</section>';
         // $view .= '</p>';
 
-        $view .= '
-        <div class="event">
-          <div class="label">
-            <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
-          </div>
-          <div class="content">
-            <div class="summary">
-            <a href="http://localhost/gs/dev13/hi-chip/profile.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>
-                さんから<a href="http://localhost/gs/dev13/hi-chip/profile.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>
-                さんへ 拍手 <a>coworker</さんへ> group.
-              <div class="date">'.$result["praise_created_at"].'</div>
-            <div class="summary"> <a href="/hi-chip/profile_received.php$id="'.$result["praiser_id"].'">
-            '.$result["praiser_name"].'さん</a>から<a href="/hi-chip/profile_received.php$id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a> 拍手 <a>coworker</a> group.
-              <div class="date">'.$result["praise_created_at"].'
-              
-              </div>
-              '.$result["sent_point"].'
-            </div>
-            <div>
-            '.$result["praise_content"].'
-            </div>
-          </div>
-        </div>';
+        $view .= '<div class="event">
+                            <div class="label">
+                                <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
+                            </div>
+                            <div class="content">
+                                <div class="summary">
+                                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+                                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ 拍手
+                                        <div class="date">'.$result["praise_created_at"].'</div>
+                                    '.$result["sent_point"].'
+                                </div>
+                            </div>
+                            <div>
+                        '.$result["praise_content"].'
+                            </div>
+                  </div>';
 
     }
 }
@@ -193,36 +186,19 @@ body {
 
         </div>
 
-
-
-        <div class="ui feed" style="margin-left: 250px;overflow: scroll;"><?=$view?></div>
+        <div class="ui feed" style="margin-left: 250px;overflow: scroll;">
+            <?=$view?>
         </div>
         </div>
+        </div>
 
 
 
-<body id="main">
+
 
 <header>
 
-<i class="ambulance icon"></i>
-<i class="bicycle icon"></i>
-<i class="bus icon"></i>
-<i class="car icon"></i>
-<i class="fighter jet icon"></i>
-<i class="motorcycle icon"></i>
-<i class="paper plane icon"></i>
-<i class="paper plane outline icon"></i>
-<i class="plane icon"></i>
-<i class="rocket icon"></i>
-<i class="ship icon"></i>
-<i class="shopping cart icon"></i>
-<i class="space shuttle icon"></i>
-<i class="subway icon"></i>
-<i class="taxi icon"></i>
-<i class="train icon"></i>
-<i class="truck icon"></i>
-<i class="wheelchair icon"></i>
+<body id="main">
 
   <nav class="navbar navbar-default">
     <div class="container-fluid">
@@ -245,28 +221,6 @@ body {
 <!-- Main[Start] -->
 
 
-<div class="ui secondary pointing menu">
-  <a class="item active" data-urlStr="timeline.php"> 
-    すべて
-  </a>
-  <a class="item " data-urlStr="timeline_received.php"> 
-    もらった
-  </a>
-  <a class="item" data-urlStr="timeline_sent.php"> 
-    おくった
-  </a>
-  <a class="item " data-urlStr="timeline_clapped.php"> 
-    拍手した
-  </a>
-
-</div>
-
-
-
-
-
-
-<div class="ui feed"><?=$view?></div>
 <!-- Main[End] -->
 
 

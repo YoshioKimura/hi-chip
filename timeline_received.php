@@ -26,6 +26,7 @@ FROM
 LEFT JOIN
     gs_user_table AS gs_user_table1
 ON  praises.praisee_id = gs_user_table1.user_id
+WHERE praises.praisee_id = $user_id
 ORDER BY
 praises.praise_created_at DESC");
 
@@ -200,16 +201,16 @@ body {
 
 
 <div class="ui secondary pointing menu">
-  <a class="item">
+  <a class="item" data-urlStr="timeline.php"> 
     すべて
   </a>
-  <a class="item active">
+  <a class="item active" data-urlStr="timeline_received.php"> 
     もらった
   </a>
-  <a class="item">
+  <a class="item" data-urlStr="timeline_sent.php"> 
     おくった
   </a>
-  <a class="item ">
+  <a class="item " data-urlStr="timeline_clapped.php"> 
     拍手した
   </a>
 
@@ -258,6 +259,8 @@ body {
   $(".menu .item").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
+            var urlStr = $(this).attr('data-urlStr');
+          location.href = "http://localhost/hi-chip/" + urlStr;
     })
 
 

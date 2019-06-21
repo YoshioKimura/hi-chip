@@ -258,7 +258,6 @@ body {
   <a class="item " data-urlStr="timeline_clapped.php"> 
     拍手した
   </a>
->>>>>>> 3d948739812acd13eb72396d97ee247cf54aa86a
 
 </div>
 

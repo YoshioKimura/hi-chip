@@ -31238,3 +31238,873 @@
 
 [21-Jun-2019 13:09:45 Europe/Berlin] デバッグ： いいねを取得します
 [21-Jun-2019 13:09:45 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：65
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：64
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：63
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：62
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：61
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：60
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：59
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：58
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：57
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：56
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：55
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：54
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：投稿ID：53
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：65
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：64
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：63
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：62
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：61
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：60
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：59
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：58
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：57
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：56
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：55
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：54
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：投稿ID：53
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:18 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:05:30 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:05:30 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:05:30 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:05:30 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:05:30 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:05:30 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：65
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：64
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：63
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：62
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：61
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：60
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：59
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：58
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：57
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：56
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：55
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：54
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：投稿ID：53
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:03 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：65
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：64
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：63
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：62
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：61
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：60
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：59
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：58
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：57
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：56
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：55
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：54
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：投稿ID：53
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:08:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:09:23 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:09:23 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:09:23 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:09:23 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:09:23 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:09:23 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:10:09 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:10:09 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:10:09 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:10:09 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:10:09 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:10:09 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:17:42 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:17:42 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:17:42 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:17:42 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:17:42 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:17:42 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:18:00 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:18:00 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:18:00 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:18:00 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:18:00 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:18:00 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:18:16 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:18:16 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:18:16 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:18:16 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:18:16 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:18:16 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:18:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:18:26 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:18:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:18:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:18:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:18:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:18:46 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:18:46 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:18:46 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:18:46 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:18:46 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:18:46 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:21:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:21:26 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:21:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:21:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:21:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:21:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:21:57 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:21:57 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:21:57 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:21:57 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:21:57 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:21:57 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:22:12 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:22:12 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:22:12 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:22:12 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:22:12 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:22:12 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:22:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:22:27 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:22:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:22:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:22:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:22:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:22:36 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:22:36 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:22:36 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:22:36 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:22:36 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:22:36 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:05 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:05 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:23:05 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:05 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:05 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:05 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:24 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:24 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:23:24 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:24 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:24 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:24 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿ID：65
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿ID：64
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿ID：63
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿ID：62
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿ID：61
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:26 Europe/Berlin] デバッグ：投稿ID：60
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿ID：59
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿ID：58
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿ID：57
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿ID：56
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿ID：55
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿ID：54
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：投稿ID：53
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:23:27 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:27:40 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:27:40 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:27:40 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:27:40 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:27:40 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:27:40 Europe/Berlin] デバッグ：クエリ成功
+[21-Jun-2019 14:27:48 Europe/Berlin] デバッグ：投稿情報を取得します。
+[21-Jun-2019 14:27:48 Europe/Berlin] デバッグ：投稿ID：66
+[21-Jun-2019 14:27:48 Europe/Berlin] デバッグ：クエリ失敗しました。
+[21-Jun-2019 14:27:48 Europe/Berlin] デバッグ：失敗したSQL：PDOStatement Object
+(
+    [queryString] => SELECT * FROM praises WHERE praise_id = :praise_id AND delete_flg = 0
+)
+
+[21-Jun-2019 14:27:48 Europe/Berlin] デバッグ： いいねを取得します
+[21-Jun-2019 14:27:48 Europe/Berlin] デバッグ：クエリ成功

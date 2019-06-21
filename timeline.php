@@ -73,23 +73,24 @@ if ($status == false) {
         // $view .=  '</section>';
         // $view .= '</p>';
 
-        $view .= '<div class="event">
-                            <div class="label">
-                                <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
-                            </div>
-                            <div class="content">
-                                <div class="summary">
-                                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
-                                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ 拍手
-                                        <div class="date">'.$result["praise_created_at"].'</div>
-                                    '.$result["sent_point"].'
-                                </div>
-                            </div>
-                            <div>
-                        '.$result["praise_content"].'
-                            </div>
-                  </div>';
-
+        $view .= $view .= '
+        <div class="event">
+            <div class="label"> 
+                <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg"> 
+            </div>
+            <div class="content">
+                <div class="summary"> 
+                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
+                    <div class="date"> 2019-06-14 18:38 </div>
+                </div>
+                <div class="extra text"> '.$result["praise_content"].' </div>
+                <!--
+                <div class="meta">
+                    <a class="like"> <i class="like icon"></i> 5 Likes </a>
+                </div> -->
+            </div>
+        </div>';
     }
 }
 ?>

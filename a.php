@@ -157,7 +157,7 @@ body {
       <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["user_id"] ?> </a>
       </div>
             <div class="navbar-header">
-      現在のポイント数：<?php renderTotalPointOfThisMonth($pdo); ?>
+      現在のポイント数：<?php renderCurrentAvailablePoint($pdo); ?>
       </div>
 
     </div>

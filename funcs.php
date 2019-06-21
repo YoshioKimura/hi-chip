@@ -37,7 +37,7 @@ function chkSsid(){
 }
 
 
-function renderTotalPointOfThisMonth($pdo){
+function renderCurrentAvailablePoint($pdo){
     $stmt = $pdo->prepare('SELECT user_id,current_available_point FROM gs_user_table WHERE user_id=:user_id');
     $stmt->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_STR);
     $status = $stmt->execute();

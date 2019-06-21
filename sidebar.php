@@ -12,10 +12,10 @@
 
                 <div class="item">
                 
-                    <div class="header"> <a href=""> タイムライン</a></div>
+                    <div class="header"> <a href="http://localhost/gs/dev13/hi-chip/timeline.php"> タイムライン</a></div>
                 </div>
                 <div class="item">
-                    <div class="header"><a href="">マイページ</a></div>
+                    <div class="header"><a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id="<?= $_SESSION["user_id"] ?>>マイページ</a></div>
                 </div>
                 <div class="item">
                     <div class="header">プロローグ</div>

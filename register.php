@@ -93,7 +93,7 @@
                 </div>
                 <div class="ui error message"></div>
             </form>
-            <div class="ui message"> Alreadey Registered? <a href="login2.php">Login</a> </div>
+            <div class="ui message"> Alreadey Registered? <a href="login.php">Login</a> </div>
         </div>
     </div>
     

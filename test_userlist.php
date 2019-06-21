@@ -42,5 +42,6 @@ if ($status == false) {
 <div class="ui items">
 
         <?= $view ?>
+</div>
 </body>
 </html>

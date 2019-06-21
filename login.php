@@ -71,7 +71,7 @@
                 </div>
                 <div class="ui error message"></div>
             </form>
-            <div class="ui message"> New to us? <a href="register2.php">Register</a> </div>
+            <div class="ui message"> New to us? <a href="register.php">Register</a> </div>
         </div>
     </div>            
     <script>

@@ -42,6 +42,9 @@ if ($status == false) {
 } else {
     //Selectデータの数だけ自動でループしてくれる
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
+    if($result = $stmt->fetch(PDO::FETCH_ASSOC) == false){
+        $view .= 'まだ投稿がありません。';
+    }
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
     //   $praise_id = $result['praise_id'];
@@ -218,7 +221,7 @@ body {
       <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
       </div>
       <div class="navbar-header">
-      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
+      <a class="navbar-brand" href="profile_received.php?user_id=<?= $_SESSION["user_id"] ?>"><?php echo $_SESSION["name"] ?> </a>
       </div>
             <div class="navbar-header">
       現在のポイント数：<?php renderCurrentAvailablePoint($pdo); ?>

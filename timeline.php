@@ -42,6 +42,9 @@ if ($status == false) {
 } else {
     //Selectデータの数だけ自動でループしてくれる
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
+    if($result = $stmt->fetch(PDO::FETCH_ASSOC) == false){
+        $view .= 'まだ投稿がありません。';
+    }
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
     //   $praise_id = $result['praise_id'];

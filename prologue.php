@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 include "funcs.php";
@@ -26,10 +27,8 @@ FROM
 LEFT JOIN
     gs_user_table AS gs_user_table1
 ON  praises.praisee_id = gs_user_table1.user_id
-WHERE praises.praisee_id = $user_id
 ORDER BY
 praises.praise_created_at DESC");
-
 
 $status = $stmt->execute();
 //３．データ表示
@@ -43,10 +42,8 @@ if ($status == false) {
 } else {
     //Selectデータの数だけ自動でループしてくれる
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
-    if($result = $stmt->fetch(PDO::FETCH_ASSOC) == false){
-        $view .= 'まだ投稿がありません。';
-    }
-    while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {    
+    while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
+
     //   $praise_id = $result['praise_id'];
     //   DBから投稿データを取得
     //   $dbPostData = getPostData($praise_id);
@@ -179,10 +176,10 @@ body {
     left: 250px;
     top: 97px;
     width: 500px;">
-                <a class="item " data-urlStr="timeline.php"> 
+             <a class="item active" data-urlStr="timeline.php"> 
                     すべて
                 </a>
-                <a class="item active" data-urlStr="timeline_received.php"> 
+                <a class="item " data-urlStr="timeline_received.php"> 
                     もらった
                 </a>
                 <a class="item " data-urlStr="timeline_sent.php"> 

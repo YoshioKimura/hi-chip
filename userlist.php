@@ -128,7 +128,7 @@ body {
       <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
       </div>
       <div class="navbar-header">
-      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
+      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $_SESSION["user_id"] ?>"><?php echo $_SESSION["name"] ?> </a>
       </div>
             <div class="navbar-header">
       現在のポイント数：<?php renderCurrentAvailablePoint($pdo); ?>
@@ -186,25 +186,5 @@ body {
 
 </script>
 
-
-
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

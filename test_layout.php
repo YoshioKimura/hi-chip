@@ -107,6 +107,14 @@ if ($status == false) {
 <title>timeline</title>
 <link rel="stylesheet" href="css/range.css">
 <script src="js/icon.js"></script>
+<!--
+<script src="js/jquery-2.1.3.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+-->
+
+<!--<style>div{padding: 10px;font-size:16px;}</style>-->
+
+
 </head>
 
 <style>
@@ -124,6 +132,17 @@ if ($status == false) {
 .btn-good .active{
     color: #f44336;
 }
+
+
+/*
+@font-face {
+  font-family: "font name";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonFile.woff2") format("woff2");
+  font-display: swap;
+}
+*/
 
 body {
   font-family: "font name", sans-serif;
@@ -146,31 +165,53 @@ body {
   padding-left:20px !important;
 }
 </style>
-        <?php include "sidebar.php"; ?>    
-        <div class="test" style="width: 100%;">
-        <?php include "header.php"; ?>
-            <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
-                <a class="item active" data-urlStr="timeline.php"> 
-                        すべて
-                    </a>
-                    <a class="item " data-urlStr="timeline_received.php"> 
-                        もらった
-                    </a>
-                    <a class="item " data-urlStr="timeline_sent.php"> 
-                        おくった
-                    </a>
-                    <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
-                        拍手した
-                    </a> -->
 
-            </div>
 
-            <div class="ui feed" style="margin-left: 18%;;
-                                        height: 100vh;
-                                        overflow: scroll;">
-                <?=$view?>
-            </div>
+
+         <?php 
+        //  include "sidebar.php";
+         ?>
+ 
+        
+        <div class="test" style="display:flex;width: 100%;"
+>
+
+        
+        <div style="background:red;width: 400px;height:400px;">ほげほげ
         </div>
+
+        <!-- <div class="test" style="background:blue;width: 400px;"> -->
+            <?php include "header.php"; ?>
+        <!-- </div> -->
+        <!-- <div class="wrapper_content">
+
+        <div class="ui feed" style="margin-left: 250px;
+                                    height: 80vh;
+                                    overflow: scroll;
+                                    position: fixed;
+                                    bottom: 0;">
+            // $view
+
+        </div> 
+        </div> -->
+        </div>
+
+
+
+
+
+<header>
+
+<body id="main">
+
+</header>
+<!-- Head[End] -->
+
+<!-- Main[Start] -->
+
+
+<!-- Main[End] -->
+
 
 <script>
   $(function(){
@@ -181,6 +222,7 @@ body {
           var $this = $(this);
           //カスタム属性（postid）に格納された投稿ID取得
           goodPostId = $this.parents('.post').data('postid'); 
+          // alert(goodPostId)
           $.ajax({
               type: 'POST',
               url: 'goodAjax.php', //post送信を受けとるphpファイル

@@ -165,76 +165,34 @@ body {
 
 
 
-         <?php include "sidebar.php"; ?>
+        <?php include "sidebar.php"; ?>    
+            <div class="test" style="width: 100%;">
+            <?php include "header.php"; ?>
+            <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
+                <a class="item " data-urlStr="timeline.php"> 
+                        すべて
+                    </a>
+                    <a class="item " data-urlStr="timeline_received.php"> 
+                        もらった
+                    </a>
+                    <a class="item active" data-urlStr="timeline_sent.php"> 
+                        おくった
+                    </a>
+                    <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
+                        拍手した
+                    </a> -->
+
+            </div>
+
+            <div class="ui feed" style="margin-left: 18%;;
+                                        height: 100vh;
+                                        overflow: scroll;">
+                <?=$view?>
+            </div>
+        </div>
+
  
         
-        <div class="test">
-        <?php include "header.php"; ?>
-
-
-        <div class="ui secondary pointing menu" style="position: relative;
-    left: 250px;
-    top: 97px;
-    width: 500px;">
-             <a class="item active" data-urlStr="timeline.php"> 
-                    すべて
-                </a>
-                <a class="item " data-urlStr="timeline_received.php"> 
-                    もらった
-                </a>
-                <a class="item " data-urlStr="timeline_sent.php"> 
-                    おくった
-                </a>
-                <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
-                    拍手した
-                </a> -->
-
-        </div>
-
-        <div class="wrapper_content">
-
-        <div class="ui feed" style="margin-left: 250px;
-                                    height: 80vh;
-                                    overflow: scroll;
-                                    position: fixed;
-                                    bottom: 0;">
-            <?=$view?>
-        </div>
-        </div>
-        </div>
-        </div>
-
-
-
-
-
-<header>
-
-<body id="main">
-
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
-      </div>
-      <div class="navbar-header">
-      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
-      </div>
-            <div class="navbar-header">
-      現在のポイント数：<?php renderCurrentAvailablePoint($pdo); ?>
-      </div>
-
-    </div>
-    
-  </nav>
-</header>
-<!-- Head[End] -->
-
-<!-- Main[Start] -->
-
-
-<!-- Main[End] -->
-
 
 <script>
   $(function(){

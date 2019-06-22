@@ -36,6 +36,20 @@ function chkSsid(){
     }
 }
 
+function renderTotalPointThisMonth($pdo){
+    $stmt = $pdo->prepare('SELECT SUM(sent_point) AS total_point_this_month FROM praises WHERE praisee_id=:user_id and praise_created_at > DATE_SUB(NOW(), INTERVAL 1 MONTH)');
+    $stmt->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_STR);
+    $status = $stmt->execute();
+    //3. SQL実行時にエラーがある場合STOP
+    if($status==false){
+        sqlError($stmt);
+    }
+    //4. 抽出データ数を取得
+    $val = $stmt->fetch();
+    $_SESSION["total_point_this_month"] = $val["total_point_this_month"];
+    echo $val["total_point_this_month"];
+}
+
 function renderTotalPointSinceRegister($pdo){
     $stmt = $pdo->prepare('SELECT SUM(sent_point) AS total_point_since_register FROM praises WHERE praisee_id= :user_id');
     $stmt->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_STR);

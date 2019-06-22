@@ -5,7 +5,6 @@ chkSsid();
 $pdo = db_con();
 
 $user_id = $_GET["user_id"];
-echo $user_id;
 //２．データ登録SQL作成
 $stmt = $pdo->prepare("SELECT * FROM gs_user_table");
 $status = $stmt->execute();
@@ -46,44 +45,40 @@ if ($status == false) {
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
-<title>フリーアンケート表示</title>
-<link rel="stylesheet" href="css/range.css">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<style>div{padding: 10px;font-size:16px;}</style>
--->
 
 
-<?php
-    include "header.php";
-?>   
+          <?php include "sidebar.php"; ?>    
+            <div class="test" style="width: 100%;">
+            <?php include "header.php"; ?>
+            <div class="ui secondary pointing menu" style="width: 175px;margin-left: 18%;">
+                <a class="item " data-urlStr="timeline.php"> 
+                        すべて
+                    </a>
+                    <a class="item " data-urlStr="timeline_received.php"> 
+                        もらった
+                    </a>
+                    <a class="item active" data-urlStr="timeline_sent.php"> 
+                        おくった
+                    </a>
+                    <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
+                        拍手した
+                    </a> -->
 
-</head>
-<body id="main">
+            </div>
 
-<div class="ui secondary pointing menu">
-  <a class="item " data-urlStr="profile_received.php"> 
-    もらった
-  </a>
-  <a class="item" data-urlStr="profile_sent.php"> 
-    おくった
-  </a>
-  <a class="item active" data-urlStr="profile_clapped.php"> 
-    拍手した
-  </a>
-
-</div>
-    <div class="container jumbotron"><?=$view?></div>
-
-<!-- Main[End] -->
-
+            <div class="ui feed" style="margin-left: 18%;;
+                                        height: 100vh;
+                                        overflow: scroll;">
+                <?=$view?>
+            </div>
+        </div>
 
 <script>
   $(".menu .item").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
             var urlStr = $(this).attr('data-urlStr');
-            location.href = "http://localhost/hi-chip/" + urlStr + "?user_id=<?= $user_id ?>";
+            location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr + "?user_id=<?= $user_id ?>";
 
   });
 

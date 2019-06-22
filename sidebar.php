@@ -15,7 +15,8 @@
                         <div class="" >
                             <h6 width="70px">今月もらった</h6>
                             <!-- <div class="">  <span>ポイント</span> </div> -->
-                            <div>累計：<?php renderTotalPointSinceRegister($pdo); ?> </div>
+                            <div><?php renderTotalPointThisMonth($pdo); ?>ポイント </div>
+                            <div>(累計：<?php renderTotalPointSinceRegister($pdo); ?>) </div>
                         </div>
                         <div class="current_available_point">
                             <h6>今週使える</h6>

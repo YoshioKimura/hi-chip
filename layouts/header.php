@@ -28,7 +28,7 @@
 </head>
 <body id="main">
 
-  <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);position:fixed;" >
+  <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);" >
     
     <div class="right menu">
 
@@ -40,10 +40,10 @@
             <i class="share square icon"></i>
             <div class="menu">
                 <div class="item">
-                <a href="timeline.php" style="color:#111">
+                <a href="http://localhost/gs/dev13/hi-chip/timeline.php" style="color:#111">
                     <small >
                         <i class="th icon"></i>
-                        <a class="header item" href="/timeline.php">タイムライン</a>
+                        <a class="header item" href="http://localhost/gs/dev13/hi-chip/timeline.php">タイムライン</a>
                     </small>
                 </a>
                 </div>
@@ -52,12 +52,12 @@
                     <small>
                         <i class="clipboard outline icon"></i>
                         
-                        <a class="header item" href="/timeline.php">褒める相手を選ぶ</a>
+                        <a class="header item" href="http://localhost/gs/dev13/hi-chip/timeline.php">褒める相手を選ぶ</a>
                     </small>
                     </a>
                 </div>
                 <div class="item">
-                <a href="logout.php" style="color:#111">
+                <a href="http://localhost/gs/dev13/hi-chip/logout.php" style="color:#111">
                     <small>
                         <i class="logout icon"></i>
                         LOG OUT

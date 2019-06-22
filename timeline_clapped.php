@@ -158,55 +158,32 @@ body {
 </style>
 
 
+    <?php include "sidebar.php"; ?>    
+                <div class="test" style="width: 100%;">
+                <?php include "header.php"; ?>
+                <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
+                    <a class="item " data-urlStr="timeline.php"> 
+                            すべて
+                        </a>
+                        <a class="item " data-urlStr="timeline_received.php"> 
+                            もらった
+                        </a>
+                        <a class="item " data-urlStr="timeline_sent.php"> 
+                            おくった
+                        </a>
+                        <!-- <a class="item active" data-urlStr="timeline_clapped.php"> 
+                            拍手した
+                        </a> -->
 
+                </div>
 
-
-<body id="main">
-<!-- Head[Start] -->
-<header>
-
-
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
-      </div>
-      <div class="navbar-header">
-      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $user_id ?>"><?php echo $_SESSION["name"] ?> </a>
-      </div>
-            <div class="navbar-header">
-      現在のポイント数：<?php renderCurrentAvailablePoint($pdo); ?>
-      </div>
-
+                <div class="ui feed" style="margin-left: 18%;;
+                                            height: 100vh;
+                                            overflow: scroll;">
+                    <?=$view?>
+                </div>
     </div>
-    
-  </nav>
-</header>
-<!-- Head[End] -->
 
-<!-- Main[Start] -->
-
-
-<div class="ui secondary pointing menu">
-  <a class="item" data-urlStr="timeline.php"> 
-    すべて
-  </a>
-  <a class="item" data-urlStr="timeline_received.php"> 
-    もらった
-  </a>
-  <a class="item" data-urlStr="timeline_sent.php"> 
-    おくった
-  </a>
-  <a class="item active" data-urlStr="timeline_clapped.php"> 
-    拍手した
-  </a>
-
-</div>
-
-
-
-<div class="ui feed"><?=$view?></div>
-<!-- Main[End] -->
 
 
 <script>

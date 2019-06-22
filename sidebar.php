@@ -1,7 +1,5 @@
 
 
-<?php include "layouts/head.php" ?>
-
 <div class="flex-wrapper" style="display:flex">
             <div class="toc">
                 <div class="ui vertical inverted menu" style="height: 100vh;width: 270px; background:white;box-shadow:8px 0px 8px -1px rgba(0,0,0,0.05)">
@@ -11,20 +9,17 @@
                     </a>
                 </div>
 
-                <h1 style="margin: auto;
-    width: 104px;">G's Chip</h1>
-
-
-                <div class="wrapper-points" style="display:flex;z-index:99;">
-                    <div class="itemv">
-                        <div class="">
+                <h1 style="margin: auto;width: 104px;">G's Chip</h1>
+                <div class="wrapper-points" style="padding-bottom:20px;border-bottom:solid 0.1px #f0f0f0;">
+                    <div class="itemv" style="display:flex; justify-content:space-around;">
+                        <div class="" >
                             <h6 width="70px">今月もらった</h6>
-                            <p class=""> 460 <span>ポイント</span> </p>
-                            <p>累計：1203</p>
+                            <!-- <div class="">  <span>ポイント</span> </div> -->
+                            <div>累計：<?php renderTotalPointSinceRegister($pdo); ?> </div>
                         </div>
                         <div class="current_available_point">
                             <h6>今週使える</h6>
-                            <p class=""> 460 <span>ポイント</span> </p>
+                            <div class=""> <?php renderCurrentAvailablePoint($pdo); ?> <span>ポイント</span> </div>
                         </div>
                     </div>
                 </div>

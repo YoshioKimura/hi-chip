@@ -60,23 +60,6 @@ if ($status == false) {
 
 </head>
 <body id="main">
-<!-- Head[Start] -->
-<header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header"> 
-      <a class="navbar-brand" href="timeline.php">タイムラインへ</a>
-      </div>
-      <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">現在の保有ポイント数：<?php renderCurrentAvailablePoint($pdo); ?></a>
-      </div>
-    </div>
-  </nav>
-</header>
-<!-- Head[End] -->
-
-<!-- Main[Start] -->
-
 
 <div class="ui secondary pointing menu">
   <a class="item active" data-urlStr="profile_received.php"> 

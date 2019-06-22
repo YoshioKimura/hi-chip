@@ -36,9 +36,23 @@ function chkSsid(){
     }
 }
 
+function renderTotalPointSinceRegister($pdo){
+    $stmt = $pdo->prepare('SELECT SUM(sent_point) AS total_point_since_register FROM praises WHERE praisee_id= :user_id');
+    $stmt->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_STR);
+    $status = $stmt->execute();
+    //3. SQL実行時にエラーがある場合STOP
+    if($status==false){
+        sqlError($stmt);
+    }
+    //4. 抽出データ数を取得
+    $val = $stmt->fetch();
+    $_SESSION["total_point_since_register"] = $val["total_point_since_register"];
+    echo $val["total_point_since_register"];
+}
+
 
 function renderCurrentAvailablePoint($pdo){
-    $stmt = $pdo->prepare('SELECT user_id,current_available_point FROM gs_user_table WHERE user_id=:user_id');
+    $stmt = $pdo->prepare('SELECT SUM(current_available_point) AS current_available_point FROM gs_user_table WHERE user_id= :user_id');
     $stmt->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_STR);
     $status = $stmt->execute();
     //3. SQL実行時にエラーがある場合STOP
@@ -50,6 +64,8 @@ function renderCurrentAvailablePoint($pdo){
     $_SESSION["current_available_point"] = $val["current_available_point"];
     echo $val["current_available_point"];
 }
+
+
 
 function isGood($user_id, $praise_id){
 	debug('いいねした情報があるか確認');

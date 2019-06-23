@@ -43,9 +43,6 @@ if ($status == false) {
 } else {
     //Selectデータの数だけ自動でループしてくれる
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
-    if($result = $stmt->fetch(PDO::FETCH_ASSOC) == false){
-        $view .= 'まだ投稿がありません。';
-    }
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {    
     //   $praise_id = $result['praise_id'];
     //   DBから投稿データを取得
@@ -95,6 +92,9 @@ if ($status == false) {
                 </div> -->
             </div>
         </div>';
+    }
+    if($view == ""){
+        $view .= 'まだ投稿がありません。'; 
     }
 }
 ?>
@@ -148,7 +148,7 @@ body {
 </style>
         <?php include "sidebar.php"; ?>    
             <div class="test" style="width: 100%;">
-            <?php include "header.php"; ?>
+            <?php include "header1.php"; ?>
             <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                 <a class="item " data-urlStr="timeline.php"> 
                         すべて

@@ -8,7 +8,7 @@ session_start();
 include "funcs.php";
 chkSsid();
 $pdo = db_con();
-include "header.php";
+include "header1.php";
 
 //２．データ登録SQL作成
 $stmt = $pdo->prepare("SELECT * FROM gs_user_table");

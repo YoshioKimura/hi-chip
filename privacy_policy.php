@@ -1,6 +1,6 @@
 
 <?php
-include "header.php";
+include "header1.php";
 ?>
 <!DOCTYPE html>
 <html lang="ja">

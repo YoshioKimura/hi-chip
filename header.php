@@ -1,2 +1,2 @@
 
-<?php include "header1.php" ?>
+<?php include "header2.php" ?>

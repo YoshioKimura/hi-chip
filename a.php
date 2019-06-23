@@ -2,7 +2,7 @@
 <?php
 session_start();
 include "funcs.php";
-include "header.php";
+include "header1.php";
 // chkSsid();
 $pdo = db_con();
 $_SESSION["user_id"] = 56;

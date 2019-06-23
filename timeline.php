@@ -31,6 +31,7 @@ ORDER BY
 praises.praise_created_at DESC");
 
 $status = $stmt->execute();
+
 //３．データ表示
 $view = "";
 $praise_id = ''; //投稿ID
@@ -42,11 +43,8 @@ if ($status == false) {
 } else {
     //Selectデータの数だけ自動でループしてくれる
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
-    if($result = $stmt->fetch(PDO::FETCH_ASSOC) == false){
-        $view .= 'まだ投稿がありません。';
-    }
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
-
+        // $view = $view + 1;
     //   $praise_id = $result['praise_id'];
     //   DBから投稿データを取得
     //   $dbPostData = getPostData($praise_id);
@@ -86,7 +84,7 @@ if ($status == false) {
                 <div class="summary"> 
                     <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
                     <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
-                    <div class="date"> 2019-06-14 18:38 </div>
+                    <div class="date"> '.$result["praise_created_at"].' </div>
                 </div>
                 <div class="extra text"> '.$result["praise_content"].' </div>
                 <!--
@@ -95,6 +93,9 @@ if ($status == false) {
                 </div> -->
             </div>
         </div>';
+    }
+    if($view == ""){
+        $view .= 'まだ投稿がありません。'; 
     }
 }
 ?>
@@ -149,10 +150,7 @@ body {
         <?php include "sidebar.php"; ?>    
         <div class="test" style="width: 100%;">
         <?php include "/Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/header1.php"; ?>
-        <div class="ui inverted tipcolor button"> 
-            <a href="http://localhost/gs/dev13/hi-chip/timeline_received.php">チップを送る</a> 
-        </div>
-        <?= dirname(__FILE__)  ?> 
+
             <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                 <a class="item active" data-urlStr="timeline.php"> 
                         すべて
@@ -172,7 +170,7 @@ body {
             <div class="ui feed" style="margin-left: 18%;;
                                         height: 100vh;
                                         overflow: scroll;">
-                <?=$view?>
+                <?= $view ?>
             </div>
         </div>
 

@@ -29,50 +29,15 @@
 </style>
 
 <body>
-<!--
-     <div class="top ui secondary menu">
-    <a class="item sidebar"><i class="icon sidebar"></i></a>
-    <a class="item">Submit</a>
-    <div class="right menu">
-      <a class="item">Sign Up</a>
-      <a class="item">Help</a>
-    </div>
-  </div>
--->
-  
-  
-  <div class="ui inverted large borderless fluid menu column">
-    <a class="header item" href="/">HiChip</a>
-    <div class="right menu">
-        <div class="ui dropdown item">
-            <div class="header">
-                <h4>MENU　</h4>
-            </div>
-            <i class="share square icon"></i>
-            <div class="menu">
-                <div class="item">
-                    <small>
-                        <i class="th icon"></i>
-                        記事を書く
-                    </small>
-                </div>
-                <div class="item">
-                    <small>
-                        <i class="clipboard outline icon"></i>
-                        USER NAME
-                    </small>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-   
-   
+    <?php
+        include "header2.php";
+    ?>
+      
     <div class="ui middle aligned center aligned grid maxwidth centered">
         <div class="column" style="margin-bottom: 260px;">
             <h2 class="ui image header">
       <div class="content">
-        Register your account
+        会員登録
       </div>
     </h2>
             <form action="user_insert.php" method="POST" class="ui large form">
@@ -89,11 +54,11 @@
                         <div class="ui left icon input"> <i class="lock icon"></i>
                             <input type="password" name="password" placeholder="Password"> </div>
                     </div>
-                    <div class="ui fluid large teal submit button">Register</div>
+                    <div class="ui fluid large teal submit button">登録する</div>
                 </div>
                 <div class="ui error message"></div>
             </form>
-            <div class="ui message"> Alreadey Registered? <a href="login.php">Login</a> </div>
+            <div class="ui message"> すでに会員の方は<a href="login.php">こちら</a>から  </div>
         </div>
     </div>
     

@@ -6,7 +6,28 @@ $pdo = db_con();
 
 $user_id = $_GET["user_id"];
 //２．データ登録SQL作成
-$stmt = $pdo->prepare("SELECT * FROM gs_user_table");
+$stmt = $pdo->prepare("SELECT
+praises.praise_id,
+praises.praise_content,
+praises.sent_point,
+praises.praise_created_at,
+praises.praiser_id,
+praises.praisee_id,
+(gs_user_table.name) AS praiser_name,
+(gs_user_table1.name) AS praisee_name
+FROM
+(
+    praises
+    LEFT JOIN
+        gs_user_table
+    ON  praises.praiser_id = gs_user_table.user_id
+)
+LEFT JOIN
+    gs_user_table AS gs_user_table1
+ON  praises.praisee_id = gs_user_table1.user_id
+WHERE praises.praiser_id = $user_id
+ORDER BY
+praises.praise_created_at DESC");
 $status = $stmt->execute();
 
 //３．データ表示
@@ -17,23 +38,28 @@ if ($status == false) {
     //Selectデータの数だけ自動でループしてくれる
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
-      //自分を表示させない
-      if($result["user_id"] != $_SESSION["user_id"]){
-        $view .= '<p>';
-        // $view .= '<a href="delete.php?id=' . $result["id"] . '">';
-        // $view .= "[削除] ";
-        // $view .= '</a>';
-        $view .= '<a href="user_praise.php?praisee_id=' . $result["user_id"] . '">';
-        $view .= $result["name"];
-        $view .= '<a href="user_praise.php?praisee_id=' . $result["user_id"] . '">';
-        $view .= "     称賛を送る";
-        $view .= '</a>';
-        $view .= '</a>';
-        $view .= '</a>';
-        $view .= '</p>';
-      }
+        $view .= '
+        <div class="event">
+            <div class="label"> 
+                <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg"> 
+            </div>
+            <div class="content">
+                <div class="summary"> 
+                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
+                    <div class="date"> 2019-06-14 18:38 </div>
+                </div>
+                <div class="extra text"> '.$result["praise_content"].' </div>
+                <!--
+                <div class="meta">
+                    <a class="like"> <i class="like icon"></i> 5 Likes </a>
+                </div> -->
+            </div>
+        </div>';
     }
-
+    if($view == ""){
+        $view .= 'まだ投稿がありません。'; 
+    }
 }
 ?>
 
@@ -44,10 +70,18 @@ if ($status == false) {
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.event{
+  padding-top:30px !important;
+  padding-bottom:30px !important;
+  border-top:solid 1px #f0f0f0 !important;
+}
+</style>
 </head>
     <?php include "sidebar.php"; ?>    
             <div class="test" style="width: 100%;">
-            <?php include "header.php"; ?>
+            <?php include "header1.php"; ?>
             <div class="ui secondary pointing menu" style="width: 175px;margin-left: 18%;">
                     <a class="item " data-urlStr="profile_received.php"> 
                         もらった

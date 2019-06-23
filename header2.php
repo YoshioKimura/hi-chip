@@ -67,6 +67,17 @@
             color: #fff !important;
         }
 
+        .logo{
+            height: 50px;
+            margin-left: 120px;
+            margin-top: 4px;
+        }
+
+        .logo img{
+            max-width: 100%;
+            max-height: 100%;
+        }
+
         
         
 </style>
@@ -75,47 +86,11 @@
 <body id="main">
 
   <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);min-height: 3.857143em;" >
-    
-
-  <div class="ui inverted tipcolor button">
-            <a href="http://localhost/gs/dev13/hi-chip/userlist.php">チップを送る</a> 
-        </div>
-
-    <div class="right menu">
-        <div class="ui dropdown item">
-            <div class="header">
-                <h4>MENU</h4>
-            </div>
-            <i class="share square icon"></i>
-            <div class="menu">
-                <div class="item">
-                <a href="http://localhost/gs/dev13/hi-chip/timeline.php" style="color:#111">
-                    <small >
-                        <i class="th icon"></i>
-                        <a class="header item" href="http://localhost/gs/dev13/hi-chip/timeline.php">タイムライン</a>
-                    </small>
-                </a>
-                </div>
-                <div class="item">
-                <a href="userlist.php" style="color:#111">
-                    <small>
-                        <i class="clipboard outline icon"></i>
-                        
-                        <a class="header item" href="http://localhost/gs/dev13/hi-chip/timeline.php">褒める相手を選ぶ</a>
-                    </small>
-                    </a>
-                </div>
-                <div class="item">
-                <a href="http://localhost/gs/dev13/hi-chip/logout.php" style="color:#111">
-                    <small>
-                        <i class="logout icon"></i>
-                        LOG OUT
-                    </small>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <div class="logo">
+        <img src="img/logo.png" alt="">
     </div>
+
+
 </div>
 <script>
         $(document).ready(function () {

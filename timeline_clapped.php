@@ -2,7 +2,7 @@
 <?php
 session_start();
 include "funcs.php";
-include "header.php";
+include "header1.php";
 chkSsid();
 $pdo = db_con();
 $user_id = $_SESSION["user_id"];
@@ -39,14 +39,8 @@ $dbPostGoodNum = ''; //いいねの数
 if ($status == false) {
     sqlError($stmt);
 } else {
-  if($result = $stmt->fetch(PDO::FETCH_ASSOC) == false){
-    $view .= 'まだ投稿がありません。';
-}
     //Selectデータの数だけ自動でループしてくれる
     //FETCH_ASSOC=http://php.net/manual/ja/pdostatement.fetch.php
-        if($result = $stmt->fetch(PDO::FETCH_ASSOC) == false){
-        $view .= 'まだ投稿がありません。';
-    }
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
 
       $praise_id = $result['praise_id'];
@@ -94,7 +88,9 @@ if ($status == false) {
             </div>
           </div>
         </div>';
-
+    }
+    if($view == ""){
+        $view .= 'まだ投稿がありません。'; 
     }
 }
 ?>
@@ -160,7 +156,7 @@ body {
 
     <?php include "sidebar.php"; ?>    
                 <div class="test" style="width: 100%;">
-                <?php include "header.php"; ?>
+                <?php include "header1.php"; ?>
                 <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                     <a class="item " data-urlStr="timeline.php"> 
                             すべて

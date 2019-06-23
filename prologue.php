@@ -167,7 +167,7 @@ body {
 
         <?php include "sidebar.php"; ?>    
             <div class="test" style="width: 100%;">
-            <?php include "header.php"; ?>
+            <?php include "header1.php"; ?>
             <!-- <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                 <a class="item " data-urlStr="timeline.php"> 
                         すべて
@@ -192,7 +192,7 @@ body {
                 <p>
                 
 
-                <p>Hi-Chipは従業員の見えない活躍を称賛し合う、ピアボーナスサービスです。</p>
+                <p>Hi-Chipはコミュニティの見えない活躍を称賛し合う、ピアボーナスサービスです。</p>
 
                 <p>Hi-Chipを導入した組織の従業員には、毎週400ポイントがweb上で配られ、好きなときに、1回最大120ポイントを上限に好きなチームメンバーにメッセージと共に贈ることができます。もらったポイントは、その月の給料として1ポイント1円〜5円で実際に反映されます。</p>
 

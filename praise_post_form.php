@@ -18,7 +18,7 @@ $praisee_id = $_GET["praisee_id"];
   <meta charset="UTF-8">
 
 <?php
-    include "header.php";
+    include "header1.php";
 ?>   
 
 </head>
@@ -28,24 +28,21 @@ $praisee_id = $_GET["praisee_id"];
 <!-- <header>
   <nav class="navbar navbar-default">
     <div class="container-fluid"> -->
-    <div class="navbar-header"><a class="navbar-brand" href="timeline.php">トップページへ</a></div>
-    <!-- </div>
-  </nav>
-</header> -->
-<!-- Head[End] -->
 
-<!-- Main[Start] -->
+
 <div class="ui two column centered grid">
+
   <div class="column">
-  
+  <div class="navbar-header"><a class="navbar-brand" href="timeline.php">トップページへ</a></div>
   <form method="post" action="praise_insert.php" class="ui form">
   <div class="jumbotron">
    <fieldset>
-    <legend>称賛シート</legend>
-    <legend>残りのポイント数：<?= $_SESSION["current_available_point"] ?></legend>
+    <legend>称賛をおくる</legend>
+    <legend>おくれるポイント数：<?= $_SESSION["current_available_point"] ?></legend>
     <div class="field">
     <label>送るポイント数：</label>
     <input type="text" id="inputpoint" placeholder="120" name="sent_point" required>
+
   </div>
 
          
@@ -58,7 +55,7 @@ $praisee_id = $_GET["praisee_id"];
     </fieldset>
   </div>
 </form> 
-  
+
   </div>
 
 

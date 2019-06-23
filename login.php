@@ -54,7 +54,7 @@
         <div class="column" style="margin-bottom: 260px;">
             <h2 class="ui image header">
       <div class="content">
-        Log-in to your account
+        ログイン
       </div>
     </h2>
             <form action="login_act.php" method="POST" class="ui large form">
@@ -67,11 +67,11 @@
                         <div class="ui left icon input"> <i class="lock icon"></i>
                             <input type="password" name="lpw" placeholder="Password" value="hogehoge"> </div>
                     </div>
-                    <div class="ui fluid large teal submit button">Login</div>
+                    <div class="ui fluid large teal submit button">ログイン</div>
                 </div>
                 <div class="ui error message"></div>
             </form>
-            <div class="ui message"> New to us? <a href="register.php">Register</a> </div>
+            <div class="ui message"> 会員登録がまだの方は<a href="register.php">こちら </a>から </div>
         </div>
     </div>            
     <script>

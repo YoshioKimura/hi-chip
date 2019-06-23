@@ -13,11 +13,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    <?php include "layouts/head.php" ?>
+    <?php include "head.php" ?>
 
 </head>
 <body>
-<?php include "layouts/header.php" ?>
+<?php include "header1.php" ?>
 
 <?php
 session_start();

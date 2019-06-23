@@ -88,7 +88,7 @@ body {
 
         <?php include "sidebar.php"; ?>    
             <div class="test" style="width: 100%;">
-            <?php include "header.php"; ?>
+            <?php include "header1.php"; ?>
             
 
             <div class="ui items" style="margin-left: 18%;;

@@ -1,5 +1,2 @@
 
-<?php
-include "layouts/header.php";
-
-?>
+<?php include "header1.php" ?>

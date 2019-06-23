@@ -1,6 +1,10 @@
-
-
-<?php include "layouts/head.php" ?>
+<link rel="shortcut icon" href="img/favicon2.png" type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
+<link rel="stylesheet" href="css/all.css"/>
+<link rel="stylesheet" href="css/modal.min.css"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+<script src="js/modal.min.js"></script>
 
 <style>
     .ui.large.menu{
@@ -22,17 +26,52 @@
         .h20 div{
         /* padding:1em; */
         }
+
+        .tipcolor{
+            background-color: #0000;
+            box-shadow: 0 0 0 2px #2ecc40 inset!important;
+            color: #E684C3 !important;
+            border:solid #E684C3 1px !important;
+            border-radius:25px !important;
+        }
+
+        .tipcolor a{
+            text-decoration:none !important;
+            color:#E684C3 !important;
+        }
+
+        .tipcolor a:hover{
+            text-decoration:none !important;
+            color: #fff !important;
+        }
+        .tipcolor:hover {
+            background-color: #E684C3 !important;
+            box-shadow: 0 0 0 2px #2ecc40 inset!important;
+            color: #fff !important;
+            border: none !important;
+            border-radius:25px !important;
+        }
+
+        .tipcolor:hover + .button a{
+            text-decoration:none !important;
+            color: #fff !important;
+        }
+
+        
         
 </style>
 
 </head>
 <body id="main">
 
-  <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);" >
+  <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);min-height: 3.857143em;" >
     
-    <div class="right menu">
 
-        
+  <div class="ui inverted tipcolor button"> 
+            <a href="http://localhost/gs/dev13/hi-chip/userlist.php">チップを送る</a> 
+        </div>
+
+    <div class="right menu">
         <div class="ui dropdown item">
             <div class="header">
                 <h4>MENU</h4>

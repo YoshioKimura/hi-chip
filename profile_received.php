@@ -19,7 +19,7 @@ if ($status == false) {
     while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
       //自分を表示させない
       if($result["user_id"] != $_SESSION["user_id"]){
-
+        
         $view .= '<p>';
         // $view .= '<a href="delete.php?id=' . $result["id"] . '">';
         // $view .= "[削除] ";
@@ -50,7 +50,12 @@ if ($status == false) {
 
         <?php include "sidebar.php"; ?>    
             <div class="test" style="width: 100%;">
+            <!-- ヘッダー部分を読み込み -->
             <?php include "header.php"; ?>
+            
+
+
+
             <div class="ui secondary pointing menu" style="width: 175px;margin-left: 18%;">
 
                     <a class="item active" data-urlStr="profile_received.php"> 

@@ -148,7 +148,11 @@ body {
 </style>
         <?php include "sidebar.php"; ?>    
         <div class="test" style="width: 100%;">
-        <?php include "header.php"; ?>
+        <?php include "/Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/header1.php"; ?>
+        <div class="ui inverted tipcolor button"> 
+            <a href="http://localhost/gs/dev13/hi-chip/timeline_received.php">チップを送る</a> 
+        </div>
+        <?= dirname(__FILE__)  ?> 
             <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                 <a class="item active" data-urlStr="timeline.php"> 
                         すべて

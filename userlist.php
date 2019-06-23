@@ -1,10 +1,8 @@
-
 <?php
 session_start();
 include "funcs.php";
 chkSsid();
 $pdo = db_con();
-
 
 //２．データ登録SQL作成
 $stmt = $pdo->prepare("SELECT * FROM gs_user_table");
@@ -22,18 +20,17 @@ if ($status == false) {
       if($result["user_id"] != $_SESSION["user_id"]){
 
         $view .= '<div class="item">
-            <a class="ui tiny image"> 
-            <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg"> 
-            </a>
-            <div class="content"> <a class="header" href="http://localhost/gs/dev13/hi-chip/praise_post_form.php?praisee_id='.$result["user_id"] . '">'. $result["name"].'</a>
-                <div class="description">
-                    <p> <a href="http://localhost/gs/dev13/hi-chip/praise_post_form.php?praisee_id=' . $result["user_id"] . '">チップを贈る</a></p>
-                </div>
-            </div>
-        </div>';
+                    <a class="ui tiny image"> 
+                    <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg"> 
+                    </a>
+                    <div class="content"> <a class="header" href="http://localhost/gs/dev13/hi-chip/praise_post_form.php?praisee_id='.$result["user_id"] . '">'. $result["name"].'</a>
+                        <div class="description">
+                            <p> <a href="http://localhost/gs/dev13/hi-chip/praise_post_form.php?praisee_id=' . $result["user_id"] . '">チップを贈る</a></p>
+                        </div>
+                    </div>
+                </div>';
             }
-          }
-
+      }
 }
 ?>
 
@@ -47,13 +44,6 @@ if ($status == false) {
 <title>timeline</title>
 <link rel="stylesheet" href="css/range.css">
 <script src="js/icon.js"></script>
-<!--
-<script src="js/jquery-2.1.3.min.js"></script>
-<link href="css/bootstrap.min.css" rel="stylesheet">
--->
-
-<!--<style>div{padding: 10px;font-size:16px;}</style>-->
-
 
 </head>
 
@@ -96,54 +86,17 @@ body {
 </style>
 
 
-         <?php include "sidebar.php"; ?>
- 
-        
-        <div class="test">
-        <?php include "header.php"; ?>
+        <?php include "sidebar.php"; ?>    
+            <div class="test" style="width: 100%;">
+            <?php include "header.php"; ?>
+            
 
-        <div class="wrapper_content">
-
-
-
-            <div class="ui items" style="margin-left: 250px;
-                                    height: 80vh;
-                                    overflow: scroll;
-                                    position: fixed;
-                                    bottom: 0;">
-              <?= $view ?>
+            <div class="ui items" style="margin-left: 18%;;
+                                        height: 100vh;
+                                        overflow: scroll;">
+                <?=$view?>
             </div>
         </div>
-        </div>
-        </div>
-
-
-<header>
-
-<body id="main">
-
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
-      </div>
-      <div class="navbar-header">
-      <a class="navbar-brand" href="profile_received.php?user_id=<?php echo $_SESSION["user_id"] ?>"><?php echo $_SESSION["name"] ?> </a>
-      </div>
-            <div class="navbar-header">
-      現在のポイント数：<?php renderCurrentAvailablePoint($pdo); ?>
-      </div>
-
-    </div>
-    
-  </nav>
-</header>
-<!-- Head[End] -->
-
-<!-- Main[Start] -->
-
-
-<!-- Main[End] -->
 
 
 <script>

@@ -92,7 +92,7 @@ body {
             
 
             <div class="ui items" style="margin-left: 18%;;
-                                        height: 100vh;
+                                        height: calc(100vh - 129px);
                                         overflow: scroll;">
                 <?=$view?>
             </div>

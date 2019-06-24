@@ -141,11 +141,7 @@ body {
    height:20px !important;
 }
 
-.inverted .header,
-.inverted .item{
-  color:#000000de !important;
-  padding-left:20px !important;
-}
+
 </style>
         <?php include "sidebar.php"; ?>    
         <div class="test" style="width: 100%;">
@@ -168,7 +164,7 @@ body {
             </div>
 
             <div class="ui feed" style="margin-left: 18%;;
-                                        height: 100vh;
+                                        height: calc(100vh - 129px);
                                         overflow: scroll;">
                 <?= $view ?>
             </div>

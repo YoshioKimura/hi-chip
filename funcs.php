@@ -46,8 +46,11 @@ function renderTotalPointThisMonth($pdo){
     }
     //4. 抽出データ数を取得
     $val = $stmt->fetch();
-    $_SESSION["total_point_this_month"] = $val["total_point_this_month"];
-    echo $val["total_point_this_month"];
+	$_SESSION["total_point_this_month"] = $val["total_point_this_month"];
+	if($_SESSION["total_point_this_month"] == ""){
+		$_SESSION["total_point_this_month"] = 0;
+	}
+    echo $_SESSION["total_point_this_month"] = 0;
 }
 
 function renderTotalPointSinceRegister($pdo){
@@ -60,8 +63,11 @@ function renderTotalPointSinceRegister($pdo){
     }
     //4. 抽出データ数を取得
     $val = $stmt->fetch();
-    $_SESSION["total_point_since_register"] = $val["total_point_since_register"];
-    echo $val["total_point_since_register"];
+	$_SESSION["total_point_since_register"] = $val["total_point_since_register"];
+	if($_SESSION["total_point_since_register"] == ""){
+		$_SESSION["total_point_since_register"] = 0;
+	}
+    echo $_SESSION["total_point_since_register"] = 0;
 }
 
 
@@ -75,8 +81,11 @@ function renderCurrentAvailablePoint($pdo){
     }
     //4. 抽出データ数を取得
     $val = $stmt->fetch();
-    $_SESSION["current_available_point"] = $val["current_available_point"];
-    echo $val["current_available_point"];
+	$_SESSION["current_available_point"] = $val["current_available_point"];
+	if($_SESSION["current_available_point"] == ""){
+		$_SESSION["current_available_point"] = 0;
+	}
+    echo $_SESSION["current_available_point"] = 0;
 }
 
 

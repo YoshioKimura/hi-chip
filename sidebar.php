@@ -1,4 +1,10 @@
-
+<style>
+.inverted .header,
+.inverted .item{
+  color:#000000de !important;
+  padding-left:20px !important;
+}
+</style>
 
 <div class="flex-wrapper" style="display:flex">
             <div class="toc">
@@ -29,13 +35,13 @@
 
                 <div class="item">
                 
-                    <div class="header"> <a href="http://localhost/gs/dev13/hi-chip/timeline.php"> タイムライン</a></div>
+                    <div class="header"> <a style="display:block" href="http://localhost/gs/dev13/hi-chip/timeline.php"> タイムライン</a></div>
                 </div>
                 <div class="item">
-                    <div class="header"><a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id=<?= $_SESSION["user_id"] ?>">マイページ</a></div>
+                    <div class="header"><a style="display:block" href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id=<?= $_SESSION["user_id"] ?>">マイページ</a></div>
                 </div>
                 <div class="item">
-                    <div class="header"><a href="http://localhost/gs/dev13/hi-chip/prologue.php"> プロローグ</a></div>
+                    <div class="header"><a style="display:block" href="http://localhost/gs/dev13/hi-chip/prologue.php"> プロローグ</a></div>
                 </div>
                 <!-- <div class="item">
                     <div class="header">よくある質問</div>

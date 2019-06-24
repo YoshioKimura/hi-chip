@@ -166,7 +166,7 @@ body {
             </div>
 
             <div class="ui feed" style="margin-left: 18%;;
-                                        height: 100vh;
+                                        height: calc(100vh - 129px);
                                         overflow: scroll;">
                 <?=$view?>
             </div>

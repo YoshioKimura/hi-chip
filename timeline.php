@@ -147,7 +147,7 @@ body {
 </style>
         <?php include "sidebar.php"; ?>    
         <div class="test" style="width: 100%;">
-        <?php include "/Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/header1.php"; ?>
+        <?php include changePathByEnv("header1.php") ?>
 
             <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                 <a class="item active" data-urlStr="timeline.php"> 
@@ -206,7 +206,7 @@ body {
             $(".item").removeClass('active');
             $(this).addClass('active');
             var urlStr = $(this).attr('data-urlStr');
-          location.href = "<?= changePathByEnv('userlist.php') ?>" + urlStr;
+          location.href = "<?= changePathByEnv('').'/' ?>" + urlStr;
     })
 
 </script>

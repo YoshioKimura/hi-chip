@@ -21,7 +21,7 @@ function changePathByEnv($path){
 		$url .= $localHostUrl."/".$path;
 		return $url;
 	}else{
-		$url .= "/".$path;
+		$url .= $path;
 		return $url;
 	}
 }

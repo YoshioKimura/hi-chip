@@ -12,5 +12,3 @@ echo "hoge" >> "./a.txt"
 // $sql = "UPDATE gs_user_table SET point=400";
 // $stmt = $pdo->prepare($sql);
 // $status = $stmt->execute();
-
-//http://localhost/gs/dev13/hi-chip/cron.php

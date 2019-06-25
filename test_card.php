@@ -100,8 +100,8 @@ if ($status == false) {
         //                     </div>
         //                     <div class="content">
         //                         <div class="summary">
-        //                             <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
-        //                             <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
+        //                             <a href="'.changePathByEnv("profile_received.php").'?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+        //                             <a href="'.changePathByEnv("profile_received.php").'?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
         //                                 <div class="date">'.$result["praise_created_at"].'</div>
         //                             '.$result["sent_point"].'
         //                         </div>

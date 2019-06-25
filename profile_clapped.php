@@ -77,9 +77,11 @@ if ($status == false) {
   $(".menu .item").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
-            var urlStr = $(this).attr('data-urlStr');
-            location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr + "?user_id=<?= $user_id ?>";
-
+            let urlStr = $(this).attr('data-urlStr');
+            let targetHref = "<?= changePathByEnv('') ?>";
+            let user_id = "<?= $user_id ?>";
+            console.log(`${targetHref}${urlStr}?user_id=${user_id}`);
+            location.href = `${targetHref}${urlStr}?user_id=${user_id}`;
   });
 
 

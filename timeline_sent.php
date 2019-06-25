@@ -228,8 +228,9 @@ body {
   $(".menu .item").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
-            var urlStr = $(this).attr('data-urlStr');
-          location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr;
+            let urlStr = $(this).attr('data-urlStr');
+            let targetHref = "<?= changePathByEnv('') ?>";
+            location.href = `${targetHref}${urlStr}`;
     })
 
 </script>

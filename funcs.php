@@ -14,6 +14,18 @@ function db_con(){
     }      
 }
 
+function changePathByEnv($path){
+	$localHostUrl = "http://localhost/gs/dev13/hi-chip";
+	$url = "";
+	if($_SERVER['SERVER_NAME'] == "localhost"){
+		$url .= $localHostUrl."/".$path;
+		return $url;
+	}else{
+		$url .= "/".$path;
+		return $url;
+	}
+}
+
 function redirect($page){
     header("Location: ".$page);
     exit;

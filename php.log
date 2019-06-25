@@ -1,0 +1,15 @@
+[25-Jun-2019 12:47:15 Europe/Berlin] PHP Warning:  Missing argument 1 for changePathByEnv(), called in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/profile_sent.php on line 113 and defined in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 17
+[25-Jun-2019 12:47:15 Europe/Berlin] PHP Notice:  Undefined variable: path in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 21
+[25-Jun-2019 12:47:35 Europe/Berlin] PHP Warning:  Missing argument 1 for changePathByEnv(), called in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/profile_sent.php on line 113 and defined in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 17
+[25-Jun-2019 12:47:35 Europe/Berlin] PHP Notice:  Undefined variable: path in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 21
+[25-Jun-2019 12:47:38 Europe/Berlin] PHP Warning:  Missing argument 1 for changePathByEnv(), called in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/profile_sent.php on line 113 and defined in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 17
+[25-Jun-2019 12:47:38 Europe/Berlin] PHP Notice:  Undefined variable: path in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 21
+[25-Jun-2019 12:47:43 Europe/Berlin] PHP Warning:  Missing argument 1 for changePathByEnv(), called in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/profile_sent.php on line 113 and defined in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 17
+[25-Jun-2019 12:47:43 Europe/Berlin] PHP Notice:  Undefined variable: path in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 21
+[25-Jun-2019 12:48:41 Europe/Berlin] PHP Warning:  Missing argument 1 for changePathByEnv(), called in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/profile_sent.php on line 113 and defined in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 17
+[25-Jun-2019 12:48:41 Europe/Berlin] PHP Notice:  Undefined variable: path in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 21
+[25-Jun-2019 12:54:00 Europe/Berlin] PHP Notice:  Undefined index: user_id in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 53
+[25-Jun-2019 12:54:00 Europe/Berlin] PHP Notice:  Undefined index: user_id in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 70
+[25-Jun-2019 12:54:00 Europe/Berlin] PHP Notice:  Undefined index: user_id in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/funcs.php on line 88
+[25-Jun-2019 12:54:00 Europe/Berlin] PHP Notice:  Undefined index: user_id in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/sidebar.php on line 41
+[25-Jun-2019 13:33:37 Europe/Berlin] PHP Notice:  Undefined variable: urlStr in /Applications/XAMPP/xamppfiles/htdocs/gs/dev13/hi-chip/profile_sent.php on line 122

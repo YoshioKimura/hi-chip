@@ -38,6 +38,8 @@ $praise_id = ''; //投稿ID
 $dbPostData = ''; //投稿内容
 $dbPostGoodNum = ''; //いいねの数
 
+$profileReceivedPath =  changePathByEnv('profile_received.php');
+
 if ($status == false) {
     sqlError($stmt);
 } else {
@@ -82,8 +84,8 @@ if ($status == false) {
             </div>
             <div class="content">
                 <div class="summary"> 
-                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
-                    <a href="http://localhost/gs/dev13/hi-chip/profile_received.php?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
+                    <a href="'.$profileReceivedPath.'?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+                    <a href="'.$profileReceivedPath.'?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
                     <div class="date"> '.$result["praise_created_at"].' </div>
                 </div>
                 <div class="extra text"> '.$result["praise_content"].' </div>
@@ -204,7 +206,7 @@ body {
             $(".item").removeClass('active');
             $(this).addClass('active');
             var urlStr = $(this).attr('data-urlStr');
-          location.href = "http://localhost/gs/dev13/hi-chip/" + urlStr;
+          location.href = "<?= changePathByEnv('userlist.php') ?>" + urlStr;
     })
 
 </script>

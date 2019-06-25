@@ -153,7 +153,6 @@ body {
 }
 </style>
 
-
     <?php include "sidebar.php"; ?>    
                 <div class="test" style="width: 100%;">
                 <?php include "header1.php"; ?>
@@ -179,7 +178,6 @@ body {
                     <?=$view?>
                 </div>
     </div>
-
 
 
 <script>
@@ -216,9 +214,9 @@ body {
   $(".menu .item").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
-            var urlStr = $(this).attr('data-urlStr');
-          location.href = "http://localhost/hi-chip/" + urlStr;
-
+            let urlStr = $(this).attr('data-urlStr');
+            let targetHref = "<?= changePathByEnv('') ?>";
+            location.href = `${targetHref}${urlStr}`;
         })
 
 

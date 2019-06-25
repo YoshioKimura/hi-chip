@@ -1,3 +1,4 @@
+
 <link rel="shortcut icon" href="img/favicon2.png" type="image/png">
 <link rel="stylesheet" href="css/semantic.css"/>
 <link rel="stylesheet" href="css/all.css"/>
@@ -80,7 +81,7 @@
 
 
         <div class="ui inverted buttoncolor button">
-            <a href="http://localhost/gs/dev13/hi-chip/userlist.php">チップを送る</a> 
+            <a href="<?= changePathByEnv('userlist.php') ?>" >チップを送る</a> 
         </div>
 
         <div class="right menu">

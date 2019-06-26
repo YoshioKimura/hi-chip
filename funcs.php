@@ -15,7 +15,7 @@ function db_con(){
 }
 
 function changePathByEnv($path){
-	$localHostUrl = "http://localhost/gs/dev13/hi-chip";
+	$localHostUrl = dirname(__FILE__);
 	$url = "";
 	if($_SERVER['SERVER_NAME'] == "localhost"){
 		$url .= $localHostUrl."/".$path;

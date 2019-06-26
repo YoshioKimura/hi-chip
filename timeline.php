@@ -148,7 +148,6 @@ body {
         <?php include "sidebar.php"; ?>    
         <div class="test" style="width: 100%;">
         <?php include changePathByEnv("header1.php") ?>
-
             <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                 <a class="item active" data-urlStr="timeline.php"> 
                         すべて

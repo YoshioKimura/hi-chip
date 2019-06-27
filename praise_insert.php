@@ -30,18 +30,28 @@ $stmt->bindValue(':praiser_id', $praiser_id, PDO::PARAM_INT);
 $stmt->bindValue(':praisee_id', $praisee_id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
-$sql2 = "update gs_user_table SET current_available_point = current_available_point - $sent_point WHERE user_id = $praiser_id;";
-// current_available_point =
-//     case user_id
-//       WHEN $praiser_id THEN `current_available_point` - $sent_point
-//       WHEN $praisee_id THEN `total_point_this_month` + $sent_point
-//     END
-//   , total_point_since_register =
-//     case user_id
-//       WHEN $praiser_id THEN '2477-05-30'
-//       WHEN $praisee_id THEN '2477-11-11'
-//     END
-// WHERE user_id IN ($praiser_id,$praisee_id)
+
+// おくったユーザーのcurrent_available_pointを減らして、
+// もらったユーザーのtotal_point_this_monthを増やす
+//current_available_point = current_available_point - $sent_point WHERE user_id = $praiser_id;";
+
+$sql2 = "UPDATE gs_user_table SET 
+current_available_point = 
+ case user_id
+   WHEN $praiser_id THEN `current_available_point` - $sent_point
+   WHEN $praisee_id THEN `current_available_point`
+ END
+, total_point_since_register =
+ case user_id
+   WHEN $praiser_id THEN `total_point_since_register` 
+   WHEN $praisee_id THEN `total_point_since_register` + $sent_point
+ END
+, total_point_this_month = 
+ case user_id
+     WHEN $praiser_id THEN `total_point_this_month` 
+     WHEN $praisee_id THEN `total_point_this_month` + $sent_point
+ END
+WHERE user_id IN (53,2)";
 
 $stmt2 = $pdo->prepare($sql2);
 $status2 = $stmt2->execute();

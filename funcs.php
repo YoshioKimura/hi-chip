@@ -66,7 +66,7 @@ function renderTotalPointThisMonth($pdo){
 	if($_SESSION["total_point_this_month"] == ""){
 		$_SESSION["total_point_this_month"] = 0;
 	}
-    echo $_SESSION["total_point_this_month"] = 0;
+    echo $_SESSION["total_point_this_month"];
 }
 
 function renderTotalPointSinceRegister($pdo){
@@ -83,12 +83,12 @@ function renderTotalPointSinceRegister($pdo){
 	if($_SESSION["total_point_since_register"] == ""){
 		$_SESSION["total_point_since_register"] = 0;
 	}
-    echo $_SESSION["total_point_since_register"] = 0;
+    echo $_SESSION["total_point_since_register"];
 }
 
 
 function renderCurrentAvailablePoint($pdo){
-    $stmt = $pdo->prepare('SELECT SUM(current_available_point) AS current_available_point FROM gs_user_table WHERE user_id= :user_id');
+    $stmt = $pdo->prepare('SELECT current_available_point FROM gs_user_table WHERE user_id= :user_id');
     $stmt->bindValue(':user_id', $_SESSION["user_id"], PDO::PARAM_STR);
     $status = $stmt->execute();
     //3. SQL実行時にエラーがある場合STOP
@@ -101,7 +101,7 @@ function renderCurrentAvailablePoint($pdo){
 	if($_SESSION["current_available_point"] == ""){
 		$_SESSION["current_available_point"] = 0;
 	}
-    echo $_SESSION["current_available_point"] = 0;
+    echo $_SESSION["current_available_point"];
 }
 
 

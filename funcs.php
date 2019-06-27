@@ -16,6 +16,10 @@ function db_con(){
 
 function changePathByEnv($path){
 	$localHostUrl = dirname(__FILE__);
+	//ローカル環境の場合(パスに'htdocs'が含まれていない場合)
+	if(strpos($localHostUrl,'/www') !== false){
+		
+	}
 	$url = "";
 	if($_SERVER['SERVER_NAME'] == "localhost"){
 		$url .= $localHostUrl."/".$path;

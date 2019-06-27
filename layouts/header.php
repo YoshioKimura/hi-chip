@@ -1,6 +1,5 @@
 
-
-<?php include changePathByEnv("head.php") ?>
+<?php include dirname(__FILE__)."/head.php";?>
 
 <style>
     .ui.large.menu{
@@ -64,7 +63,7 @@
         <div class="ui dropdown item">
 
         <div class="ui inverted tipcolor button"> 
-            <a href="<?php echo changePathByEnv("userlist.php") ?>">チップを送る</a> 
+            <a href="<?php echo dirname(__FILE__)."/userlist.php" ?>" >チップを送る</a> 
         </div>
             <div class="header">
                 <h4>MENU</h4>
@@ -72,10 +71,10 @@
             <i class="share square icon"></i>
             <div class="menu">
                 <div class="item">
-                <a href="<?php echo changePathByEnv("timeline.php") ?>" style="color:#111">
+                <a href="<?php echo dirname(__FILE__)."/timeline.php" ?>" style="color:#111">
                     <small >
                         <i class="th icon"></i>
-                        <a class="header item" href="<?php echo changePathByEnv("timeline.php") ?>">タイムライン</a>
+                        <a class="header item" href="<?php echo dirname(__FILE__)."/timeline.php" ?>">タイムライン</a>
                     </small>
                 </a>
                 </div>
@@ -84,7 +83,7 @@
                     <small>
                         <i class="clipboard outline icon"></i>
                         
-                        <a class="header item" href="<?php echo changePathByEnv("timeline.php") ?>">">褒める相手を選ぶ</a>
+                        <a class="header item" href="<?php echo dirname(__FILE__)."/userlist.php" ?>">">褒める相手を選ぶ</a>
                     </small>
                     </a>
                 </div>

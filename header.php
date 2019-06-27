@@ -1,2 +1,2 @@
 
-<?php include "header2.php" ?>
+<?php include dirname(__FILE__)."/header2.php" ?>

@@ -80,8 +80,8 @@ if ($status == false) {
             </div>
             <div class="content">
                 <div class="summary"> 
-                    <a href="'.changePathByEnv("profile_received.php").'?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
-                    <a href="'.changePathByEnv("profile_received.php").'?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
+                    <a href="'.dirname(__FILE__)."/profile_received.php".'?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+                    <a href="'.dirname(__FILE__)."/profile_received.php".'?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
                     <div class="date"> 2019-06-14 18:38 </div>
                 </div>
                 <div class="extra text"> '.$result["praise_content"].' </div>
@@ -166,9 +166,9 @@ body {
 </style>
 
 
-        <?php include "sidebar.php"; ?>    
+        <?php include dirname(__FILE__)."/sidebar.php"; ?>    
         <div class="test" style="width: 100%;">
-        <?php include changePathByEnv("header1.php") ?>
+        <?php include dirname(__FILE__)."/header1.php"; ?>
 
             <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
                 <a class="item " data-urlStr="timeline.php"> 

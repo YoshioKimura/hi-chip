@@ -14,21 +14,21 @@ function db_con(){
     }      
 }
 
-function changePathByEnv($path){
-	$localHostUrl = dirname(__FILE__);
+function changeUrlByEnv($path){
+	$developmentEnvUrl = "http://localhost/gs/dev13/hi-chip/";
+	$productionEnvUrl = "https://hichip.sakura.ne.jp/";
 	//ローカル環境の場合(パスに'htdocs'が含まれていない場合)
-	if(strpos($localHostUrl,'/www') !== false){
-		
-	}
 	$url = "";
 	if($_SERVER['SERVER_NAME'] == "localhost"){
-		$url .= $localHostUrl."/".$path;
+		$url .= $developmentEnvUrl.$path;
 		return $url;
 	}else{
-		$url .= $path;
+		$url .= $productionEnvUrl.$path;
 		return $url;
 	}
 }
+
+
 
 function redirect($page){
     header("Location: ".$page);

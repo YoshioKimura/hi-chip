@@ -81,8 +81,8 @@ if ($status == false) {
             </div>
             <div class="content">
                 <div class="summary"> 
-                    <a href="'.dirname(__FILE__)."/profile_received.php".'?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
-                    <a href="'.dirname(__FILE__)."/profile_received.php".'?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
+                    <a href="'.changeUrlByEnv("profile_received.php").'?user_id='.$result["praiser_id"].'">'.$result["praiser_name"].'</a>さんから
+                    <a href="'.changeUrlByEnv("profile_received.php").'?user_id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a>さんへ '.$result["sent_point"].' ポイント贈られました！
                     <div class="date"> 2019-06-14 18:38 </div>
                 </div>
                 <div class="extra text"> '.$result["praise_content"].' </div>
@@ -208,7 +208,7 @@ body {
             $(".item").removeClass('active');
             $(this).addClass('active');
             let urlStr = $(this).attr('data-urlStr');
-            let targetHref = "<?= changePathByEnv('') ?>";
+            let targetHref = "<?= changeUrlByEnv('') ?>";
             location.href = `${targetHref}${urlStr}`;
     })
 

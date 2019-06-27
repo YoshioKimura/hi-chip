@@ -88,7 +88,7 @@
                     </a>
                 </div>
                 <div class="item">
-                <a style="color:#111" href="<?php echo changePathByEnv("logout.php") ?>">
+                <a style="color:#111" href="<?php echo changeUrlByEnv("logout.php") ?>">
                     <small>
                         <i class="logout icon"></i>
                         LOG OUT

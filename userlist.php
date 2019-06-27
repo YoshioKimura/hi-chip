@@ -23,9 +23,9 @@ if ($status == false) {
                     <a class="ui tiny image"> 
                     <img src="https://semantic-ui.com/images/avatar/large/stevie.jpg"> 
                     </a>
-                    <div class="content"> <a class="header" href="'.changePathByEnv('praise_post_form.php').'?praisee_id='.$result["user_id"] . '">'. $result["name"].'</a>
+                    <div class="content"> <a class="header" href="'.changeUrlByEnv('praise_post_form.php').'?praisee_id='.$result["user_id"] . '">'. $result["name"].'</a>
                         <div class="description">
-                            <p> <a href="'.changePathByEnv("praise_post_form.php").'?praisee_id=' . $result["user_id"] . '">チップを贈る</a></p>
+                            <p> <a href="'.changeUrlByEnv("praise_post_form.php").'?praisee_id=' . $result["user_id"] . '">チップを贈る</a></p>
                         </div>
                     </div>
                 </div>';

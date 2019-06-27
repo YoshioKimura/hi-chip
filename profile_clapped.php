@@ -78,7 +78,7 @@ if ($status == false) {
             $(".item").removeClass('active');
             $(this).addClass('active');
             let urlStr = $(this).attr('data-urlStr');
-            let targetHref = "<?= changePathByEnv('') ?>";
+            let targetHref = "<?= changeUrlByEnv('') ?>";
             let user_id = "<?= $user_id ?>";
             console.log(`${targetHref}${urlStr}?user_id=${user_id}`);
             location.href = `${targetHref}${urlStr}?user_id=${user_id}`;

@@ -79,7 +79,7 @@ if ($status == false) {
             <img src="https://semantic-ui.com/images/avatar/small/jenny.jpg">
           </div>
           <div class="content">
-            <div class="summary"> <a href="/hi-chip/profile_received.php$id="'.$result["praiser_id"].'">
+            <div class="summary"> <a href="'.changeUrlByEnv("profile_received.php").'?id="'.$result["praiser_id"].'">
             '.$result["praiser_name"].'さん</a>から<a href="/hi-chip/profile_received.php$id='.$result["praisee_id"].'">'.$result["praisee_name"].'</a> 拍手 <a>coworker</a> group.
               <div class="date">'.$result["praise_created_at"].'
               
@@ -215,7 +215,7 @@ body {
             $(".item").removeClass('active');
             $(this).addClass('active');
             let urlStr = $(this).attr('data-urlStr');
-            let targetHref = "<?= changePathByEnv('') ?>";
+            let targetHref = "<?= changeUrlByEnv('') ?>";
             location.href = `${targetHref}${urlStr}`;
         })
 

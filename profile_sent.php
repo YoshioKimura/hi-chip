@@ -83,10 +83,10 @@ if ($status == false) {
             <div class="test" style="width: 100%;">
             <?php include "header1.php"; ?>
             <div class="ui secondary pointing menu" style="width: 175px;margin-left: 18%;">
-                    <a class="item " data-urlStr="profile_received.php"> 
+                    <a class="item tab" data-urlStr="profile_received.php"> 
                         もらった
                     </a>
-                    <a class="item active" data-urlStr="profile_sent.php"> 
+                    <a class="item tab active" data-urlStr="profile_sent.php"> 
                         おくった
                     </a>
                     <!-- <a class="item" data-urlStr="profile_clapped.php"> 
@@ -107,7 +107,7 @@ if ($status == false) {
 
 
 
-  $(".menu .item").click(function () {
+  $(".tab").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
             let urlStr = $(this).attr('data-urlStr');

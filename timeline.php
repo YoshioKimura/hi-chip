@@ -147,13 +147,13 @@ body {
         <div class="test" style="width: 100%;">
         <?php include dirname(__FILE__)."/header1.php";?>
             <div class="ui secondary pointing menu" style="width: 250px;margin-left: 18%;">
-                <a class="item active" data-urlStr="timeline.php"> 
+                <a class="item tab active" data-urlStr="timeline.php"> 
                         すべて
                     </a>
-                    <a class="item " data-urlStr="timeline_received.php"> 
+                    <a class="item tab " data-urlStr="timeline_received.php"> 
                         もらった
                     </a>
-                    <a class="item " data-urlStr="timeline_sent.php"> 
+                    <a class="item tab " data-urlStr="timeline_sent.php"> 
                         おくった
                     </a>
                     <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
@@ -199,11 +199,11 @@ body {
   });
 
 
-  $(".menu .item").click(function () {
+  $(".tab").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
             var urlStr = $(this).attr('data-urlStr');
-          location.href = "<?= changeUrlByEnv("") ?>" + '/' + urlStr;
+          location.href = "<?= changeUrlByEnv("") ?>" + urlStr;
     })
 
 </script>

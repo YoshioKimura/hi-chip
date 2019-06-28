@@ -4,6 +4,26 @@
   color:#000000de !important;
   padding-left:20px !important;
 }
+
+.sidebar-item{
+    color:#000000de;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    transition: background-color 0.1s linear;
+}
+
+.sidebar-item:hover{
+    color:#000000de;
+    font-size: 1em;
+    font-weight: bold;
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:40px;
+    background:#F2F2F2;
+}
 </style>
 
 <div class="flex-wrapper" style="display:flex">
@@ -32,17 +52,13 @@
                 </div>
                 
 
-
-                <div class="item">
-                
-                    <div class="header"> <a style="display:block" href="<?= changeUrlByEnv("timeline.php"); ?>"> タイムライン</a></div>
-                </div>
-                <div class="item">
-                    <div class="header"><a style="display:block" href="<?= changeUrlByEnv("profile_received.php"); ?>?user_id=<?= $_SESSION["user_id"] ?>">マイページ</a></div>
-                </div>
-                <div class="item">
-                    <div class="header"><a style="display:block" href="<?= changeUrlByEnv("prologue.php"); ?>"> プロローグ</a></div>
-                </div>
+     
+                    <a class="sidebar-item" style="display:block" href="<?= changeUrlByEnv("timeline.php"); ?>"> タイムライン</a>
+     
+                    <a class="sidebar-item" style="display:block" href="<?= changeUrlByEnv("profile_received.php"); ?>?user_id=<?= $_SESSION["user_id"] ?>">マイページ</a>
+         
+                    <a class="sidebar-item" style="display:block" href="<?= changeUrlByEnv("prologue.php"); ?>"> プロローグ</a>
+               
                 <!-- <div class="item">
                     <div class="header">よくある質問</div>
                 </div>

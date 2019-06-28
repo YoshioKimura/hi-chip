@@ -51,13 +51,13 @@ if ($status == false) {
             <div class="test" style="width: 100%;">
             <?php include "header1.php"; ?>
             <div class="ui secondary pointing menu" style="width: 175px;margin-left: 18%;">
-                <a class="item " data-urlStr="timeline.php"> 
+                <a class="item tab" data-urlStr="timeline.php"> 
                         すべて
                     </a>
-                    <a class="item " data-urlStr="timeline_received.php"> 
+                    <a class="item tab" data-urlStr="timeline_received.php"> 
                         もらった
                     </a>
-                    <a class="item active" data-urlStr="timeline_sent.php"> 
+                    <a class="item tab active" data-urlStr="timeline_sent.php"> 
                         おくった
                     </a>
                     <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
@@ -74,7 +74,7 @@ if ($status == false) {
         </div>
 
 <script>
-  $(".menu .item").click(function () {
+  $(".tab").click(function () {
             $(".item").removeClass('active');
             $(this).addClass('active');
             let urlStr = $(this).attr('data-urlStr');

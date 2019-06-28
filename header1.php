@@ -26,7 +26,6 @@
         }
 
         .buttoncolor{
-                width: 110px;
             background-color: #0000;
             color: #E684C3 !important;
             border:solid #E684C3 1px !important;
@@ -35,7 +34,7 @@
             margin-top: 10px !important;
             position:absolute  !important;
             right:150px !important;
-            width: 130px;
+            width: 145px;
         }
 
         .buttoncolor a{
@@ -56,8 +55,6 @@
             background-clip: padding-box ;
             border-radius:25px !important;
             height: 100%;
-            /* padding-top:12px; */
-            /* height:42px !important; */
             margin-top: 10px !important;
             position:absolute  !important;
             right:150px !important;
@@ -67,43 +64,41 @@
             text-decoration:none !important;
             color: #fff !important;
             display:block;
-        }        
+        } 
+        small a.dropdown-item {
+            color:#000000de;
+        }       
 </style>
 
 </head>
 <body id="main">
 
  <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);min-height: 3.857143em;" >
-
         <div class="ui inverted buttoncolor button">
-            <a href="<?= changeUrlByEnv("userlist.php") ?>" >チップを送る</a> 
+            <a href="<?= changeUrlByEnv("userlist.php") ?>" >チップをおくる</a> 
         </div>
-
         <div class="right menu">
-        <div class="ui dropdown item">
-            <div class="header">
-                <h4>MENU</h4>
-            </div>
-            <i class="share square icon"></i>
-            <div class="menu">
-                <div class="item">
-                    <small>
-                        <i class="th icon"></i>
-                        記事を書く
-                    </small>
+            <div class="ui dropdown item">
+                <div class="header">
+                    <h4>MENU</h4>
                 </div>
-                <div class="item">
-                    <small>
-                        <i class="clipboard outline icon"></i>
-                        USER NAME
-                    </small>
+                <i class="share square icon"></i>
+                <div class="menu">
+                    <div class="item">
+                        <small>
+                            <i class="th icon"></i>
+                            <a class="dropdown-item" href="<?= changeUrlByEnv("userlist.php") ?>"> チップをおくる</a>
+                        </small>
+                    </div>
+                    <div class="item">
+                        <small>
+                            <i class="clipboard outline icon"></i>
+                            <a class="dropdown-item" href="<?= changeUrlByEnv("logout.php") ?>"> ログアウト</a>
+                        </small>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-
 </div> 
 </body>
 <script>

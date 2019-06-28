@@ -48,20 +48,6 @@ if ($status == false) {
 </head>
 
 <style>
-.btn-good{
-    display: inline-block;
-    padding: 0 8px;
-    cursor: pointer;
-}
-.btn-good:hover{
-    color: #f44336;
-}
-.active{
-    color: #f44336;
-}
-.btn-good .active{
-    color: #f44336;
-}
 
 body {
   font-family: "font name", sans-serif;

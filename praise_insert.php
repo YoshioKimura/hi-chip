@@ -21,9 +21,6 @@ echo $sent_point;
 //３．データ登録SQL作成
 $sql = "INSERT INTO praises(praise_id,praise_content,sent_point,praiser_id,praisee_id,praise_created_at)VALUES(NULL,:praise_content,:sent_point,:praiser_id,:praisee_id, sysdate())";
 $stmt = $pdo->prepare($sql);
-// $stmt->bindValue(':id', $id, PDO::PARAM_INT); //Integer（数値の場合 PDO::PARAM_INT)
-// $stmt->bindValue(':name', $name, PDO::PARAM_STR); //Integer（数値の場合 PDO::PARAM_INT)
-// $stmt->bindValue(':praise_title', $praise_title, PDO::PARAM_STR); //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':praise_content', $praise_content, PDO::PARAM_STR); //Integer（数値の場合 PDO::PARAM_INT)
 $stmt->bindValue(':sent_point', $sent_point, PDO::PARAM_INT);
 $stmt->bindValue(':praiser_id', $praiser_id, PDO::PARAM_INT);
@@ -31,10 +28,7 @@ $stmt->bindValue(':praisee_id', $praisee_id, PDO::PARAM_INT);
 $status = $stmt->execute();
 
 
-// おくったユーザーのcurrent_available_pointを減らして、
-// もらったユーザーのtotal_point_this_monthを増やす
-//current_available_point = current_available_point - $sent_point WHERE user_id = $praiser_id;";
-
+// おくったユーザーのcurrent_available_pointを減らして、もらったユーザーのtotal_point_this_monthを増やす
 $sql2 = "UPDATE gs_user_table SET 
 current_available_point = 
  case user_id

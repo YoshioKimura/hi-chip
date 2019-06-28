@@ -79,7 +79,6 @@
     </div>            
     <script>
         $(document).ready(function () {
-            $('.dropdown').dropdown();
             $('.ui.form').form({
                 fields: {
                     email: {

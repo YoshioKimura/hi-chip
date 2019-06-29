@@ -44,15 +44,15 @@
                 <div class="ui stacked secondary  segment">
                     <div class="field">
                         <div class="ui left icon input"> <i class="user icon"></i>
-                            <input type="text" name="name" placeholder="name"> </div>
+                            <input type="text" name="name" placeholder="お名前"> </div>
                     </div>
                     <div class="field">
                         <div class="ui left icon input"> <i class="user icon"></i>
-                            <input type="text" name="email" placeholder="E-mail address"> </div>
+                            <input type="text" name="email" placeholder="メールアドレス"> </div>
                     </div>
                     <div class="field">
                         <div class="ui left icon input"> <i class="lock icon"></i>
-                            <input type="password" name="password" placeholder="Password"> </div>
+                            <input type="password" name="lpw" placeholder="パスワード(ハッシュ化されて保存されます)"> </div>
                     </div>
                     <div class="ui fluid large teal submit button">登録する</div>
                 </div>

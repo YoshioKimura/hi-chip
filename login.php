@@ -29,30 +29,15 @@
     .centered{
         margin: auto !important;
     }
-
-    .column{
-        
-    }
     
 </style>
 
 <body>
-<!--
-     <div class="top ui secondary menu">
-    <a class="item sidebar"><i class="icon sidebar"></i></a>
-    <a class="item">Submit</a>
-    <div class="right menu">
-      <a class="item">Sign Up</a>
-      <a class="item">Help</a>
-    </div>
-  </div>
--->
-  
+
   
 <?php
-    include "header.php";
-?>
-   
+    include "header2.php";
+?> 
     <div class="ui middle aligned center aligned grid maxwidth centered">
         <div class="column" style="margin-bottom: 260px;">
             <h2 class="ui image header">
@@ -63,12 +48,12 @@
             <form action="login_act.php" method="POST" class="ui large form">
                 <div class="ui stacked secondary  segment">
                     <div class="field">
-                        <div class="ui left icon input"> <i class="user icon"></i>
-                            <input type="text" name="email" placeholder="E-mail address" value="info@call.jp"> </div>
+                        <div class="ui left icon input"> <i class="mail icon"></i>
+                            <input type="text" name="email" placeholder="メールアドレス" > </div>
                     </div>
                     <div class="field">
                         <div class="ui left icon input"> <i class="lock icon"></i>
-                            <input type="password" name="lpw" placeholder="Password" value="hogehoge"> </div>
+                            <input type="password" name="lpw" placeholder="パスワード"> </div>
                     </div>
                     <div class="ui fluid large teal submit button">ログイン</div>
                 </div>

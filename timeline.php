@@ -103,6 +103,8 @@ if ($status == false) {
 <html lang="ja">
 <head>
 <meta charset="utf-8">
+<title>G's Chip</title>
+<link rel="shortcut icon" href="img/favicon2.png" type="image/png">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>timeline</title>
@@ -191,6 +193,14 @@ body {
               console.log('Ajax Error');
           });
       });
+
+      //小さい画面(スマホなど)だったら使えなくする
+      if(window.innerWidth < 616){
+        location.href = "<?= changeUrlByEnv("") ?>" + "nosmartphone.php";
+      }
+
+
+
   });
 
 

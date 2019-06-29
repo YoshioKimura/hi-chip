@@ -45,7 +45,7 @@ current_available_point =
      WHEN $praiser_id THEN `total_point_this_month` 
      WHEN $praisee_id THEN `total_point_this_month` + $sent_point
  END
-WHERE user_id IN (53,2)";
+WHERE user_id IN ($praiser_id, $praisee_id)";
 
 $stmt2 = $pdo->prepare($sql2);
 $status2 = $stmt2->execute();

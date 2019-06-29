@@ -70,7 +70,8 @@ if ($status == false) {
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
+<title>G's Chip</title>
+<link rel="shortcut icon" href="img/favicon2.png" type="image/png">
 <style>
 .event{
   padding-top:30px !important;

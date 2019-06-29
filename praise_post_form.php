@@ -37,7 +37,7 @@ $praisee_id = $_GET["praisee_id"];
   <form method="post" action="praise_insert.php" class="ui form">
   <div class="jumbotron">
    <fieldset>
-    <legend>称賛をおくる</legend>
+    <legend>チップをおくる</legend>
     <legend>おくれるポイント数：<?= $_SESSION["current_available_point"] ?></legend>
     <div class="field">
     <label>送るポイント数：</label>

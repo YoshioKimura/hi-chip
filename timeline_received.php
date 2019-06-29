@@ -136,10 +136,6 @@ body {
   border-top:solid 1px #f0f0f0 !important;
 }
 
-.h20{
-   height:20px !important;
-}
-
 .inverted .header,
 .inverted .item{
   color:#000000de !important;
@@ -162,12 +158,8 @@ body {
                     <!-- <a class="item" data-urlStr="timeline_clapped.php"> 
                         拍手した
                     </a> -->
-
             </div>
-
-            <div class="ui feed" style="margin-left: 18%;;
-                                        height: calc(100vh - 129px);
-                                        overflow: scroll;">
+            <div class="ui feed" style="margin-left: 18%;height: calc(100vh - 129px);overflow: scroll;">
                 <?=$view?>
             </div>
         </div>

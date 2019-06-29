@@ -66,9 +66,6 @@ body {
   border-top:solid 1px #f0f0f0 !important;
 }
 
-.h20{
-   height:20px !important;
-}
 
 .inverted .header,
 .inverted .item{

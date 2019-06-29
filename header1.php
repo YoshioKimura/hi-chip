@@ -86,7 +86,7 @@
                 <div class="menu">
                     <div class="item">
                         <small>
-                            <i class="th icon"></i>
+                            <i class="reply icon"></i>
                             <a class="dropdown-item" href="<?= changeUrlByEnv("userlist.php") ?>"> チップをおくる</a>
                         </small>
                     </div>
@@ -104,7 +104,6 @@
 <script>
         $(document).ready(function () {
             $('.dropdown').dropdown();
-            
         });
     
 </script>

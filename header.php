@@ -3,7 +3,6 @@
 include dirname(__FILE__)."/funcs.php"; 
 ?>
 
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -13,12 +12,6 @@ include dirname(__FILE__)."/funcs.php";
     <title>HiCHip</title>
 </head>
 <body>
-
-<?php 
-// include dirname(__FILE__)."/sidebar.php"; 
-?>
-        <!-- <div class="test" style="width: 100%;"> -->
         <?php include dirname(__FILE__)."/header1.php";?>
-    <!-- </div> -->
 </body>
 </html>

@@ -41,47 +41,57 @@ if ($status == false) {
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--
-<title>フリーアンケート表示</title>
-<link rel="stylesheet" href="css/range.css">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<style>div{padding: 10px;font-size:16px;}</style>
--->
-
 
 <?php
     include "header1.php";
 ?>   
 
+<style>
+
+.sent-wrapper{
+  margin-top: 30px;
+}
+
+.send-finished-chip{
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  width:100%;
+  text-align:center;
+}
+
+.send-finished-available{
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  width:100%;
+  text-align:center;
+}
+
+.sent-redilect{
+  font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+  font-weight:bold;
+  width:100%;
+  margin-top:20px;
+  text-align:center; 
+}
+
+</style>
+
 </head>
 <body id="main">
-<!-- Head[Start] -->
-<header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">お礼の気持ちを送る</a>
-      </div>
-      <div class="navbar-header">
-      <a class="navbar-brand" href="userlist.php">現在の保有ポイント数：<?php renderCurrentAvailablePoint($pdo); ?></a>
-      </div>
-      <div class="navbar-header">
-      <a class="navbar-brand" href="logout.php">ログアウト</a>
-      </div>
-    </div>
-    
-  </nav>
-</header>
-<!-- Head[End] -->
 
-<!-- Main[Start] -->
-<div>
-
-    送りました！
-
-    <div class="container jumbotron"> <a href="timeline.php">トップへ戻る</a> </div>
+<div style="max-width:130px;margin:auto;margin-top:100px;">
+<img style="width:130px;" src="img/logo.png" alt="">
 </div>
-<!-- Main[End] -->
+
+
+<div class="sent-wrapper">
+  <div class="send-finished-chip">チップをおくりました！</div>
+  <div class="send-finished-available">残りの保有ポイント数：<?php renderCurrentAvailablePoint($pdo); ?></div>
+  <div class="sent-redilect"> 
+      <a href="timeline.php">トップへ戻る</a> 
+  </div>
+</div>
+
 
 </body>
 </html>

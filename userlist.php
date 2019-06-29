@@ -53,15 +53,10 @@ body {
   font-family: "font name", sans-serif;
 }
 
-
 .event{
   padding-top:30px !important;
   padding-bottom:30px !important;
   border-top:solid 1px #f0f0f0 !important;
-}
-
-.h20{
-   height:20px !important;
 }
 
 .inverted .header,

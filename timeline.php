@@ -137,11 +137,6 @@ body {
   border-top:solid 1px #f0f0f0 !important;
 }
 
-.h20{
-   height:20px !important;
-}
-
-
 </style>
         <?php include dirname(__FILE__)."/sidebar.php"; ?>
         <div class="test" style="width: 100%;">

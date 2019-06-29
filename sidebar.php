@@ -35,7 +35,7 @@
                     </a>
                 </div>
 
-                <h1 style="margin: auto;width: 104px;">G's Chip</h1>
+                <h1 style="margin: auto;margin-bottom: 30px;width: 104px;">G's Chip</h1>
                 <div class="wrapper-points" style="padding-bottom:20px;border-bottom:solid 0.1px #f0f0f0;">
                     <div class="itemv" style="display:flex; justify-content:space-around;">
                         <div class="" >
@@ -50,23 +50,11 @@
                         </div>
                     </div>
                 </div>
-                
-
-     
-                    <a class="sidebar-item" style="display:block" href="<?= changeUrlByEnv("timeline.php"); ?>"> タイムライン</a>
-     
+                    <a class="sidebar-item" style="display:block" href="<?= changeUrlByEnv("timeline.php"); ?>"> タイムライン</a>    
                     <a class="sidebar-item" style="display:block" href="<?= changeUrlByEnv("profile_received.php"); ?>?user_id=<?= $_SESSION["user_id"] ?>">マイページ</a>
-         
                     <a class="sidebar-item" style="display:block" href="<?= changeUrlByEnv("prologue.php"); ?>"> プロローグ</a>
-               
-                <!-- <div class="item">
-                    <div class="header">よくある質問</div>
-                </div>
-                <div class="item">
-                    <div class="header">ダッシュボード </div>
-                </div>
-                <div class="item">
-                    <div class=" header">名投稿まとめ</div>
-                </div> -->
+                    <!-- <a class="sidebar-item" style="display:block" href=""> よくある質問</a>
+                    <a class="sidebar-item" style="display:block" href=""> ダッシュボード</a>
+                    <a class="sidebar-item" style="display:block" href=""> プロローグ</a> -->
             </div>
 </div>

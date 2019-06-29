@@ -24,24 +24,18 @@ $praisee_id = $_GET["praisee_id"];
 </head>
 <body>
 
-<!-- Head[Start] -->
-<!-- <header>
-  <nav class="navbar navbar-default">
-    <div class="container-fluid"> -->
-
-
 <div class="ui two column centered grid">
 
   <div class="column">
   <div class="navbar-header"><a class="navbar-brand" href="timeline.php">トップページへ</a></div>
-  <form method="post" action="praise_insert.php" class="ui form">
+  <form method="post" action="praise_insert.php" class="ui form" name="form1">
   <div class="jumbotron">
    <fieldset>
     <legend>チップをおくる</legend>
     <legend>おくれるポイント数：<?= $_SESSION["current_available_point"] ?></legend>
     <div class="field">
-    <label>送るポイント数：</label>
-    <input type="text" id="inputpoint" placeholder="120" name="sent_point" required>
+    <label>送るポイント数(半角数字)：</label>
+    <input type="text" id="inputpoint" placeholder="50 " name="sent_point" required>
 
   </div>
 
@@ -66,8 +60,17 @@ $praisee_id = $_GET["praisee_id"];
 <script>
 
 $('button[type="submit"]').on('click',function(){
-  if($("#point").val() == ""){
+  if(document.form1.sent_point.value.match(/[^0-9]+/) || document.form1.sent_point.value.match(/[^0-9]+/)){
+    window.alert('数字以外が入力されています'); 
+    return false;
+  }
+  if($("#inputpoint").val() == ""){
     alert("送付するポイントを入力してください")
+    return false;
+  }
+
+  if($("#inputpoint").val() > 120){
+    alert("一度におくれるのは120ポイント以下です")
     return false;
   }
 

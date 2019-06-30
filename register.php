@@ -59,7 +59,7 @@
                 </div>
                 <div class="ui error message"></div>
             </form>
-            <div class="ui message"> すでに会員の方は<a href="login.php">こちら</a>から  </div>
+            <div class="ui message"> ログインは<a href="login.php">こちら</a>から  </div>
         </div>
     </div>
     

@@ -4,7 +4,7 @@ $name = $_POST["name"];
 $email = $_POST["email"];
 $lpw = $_POST["lpw"];
 
-$default_point = 300;
+$default_point = 200;
 $current_available_point = $default_point;
 $kanri_flg = 0;
 

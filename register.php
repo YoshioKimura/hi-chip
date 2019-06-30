@@ -48,7 +48,7 @@
                             <input type="text" name="name" placeholder="お名前"> </div>
                     </div>
                     <div class="field">
-                        <div class="ui left icon input"> <i class="user icon"></i>
+                        <div class="ui left icon input"> <i class="mail icon"></i>
                             <input type="text" name="email" placeholder="メールアドレス"> </div>
                     </div>
                     <div class="field">

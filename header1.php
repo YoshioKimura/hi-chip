@@ -75,7 +75,7 @@
 </head>
 <body id="main">
 
- <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);min-height: 3.857143em;" >
+ <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;border-bottom: solid 1px #f0f0f0;min-height: 3.857143em;" >
         <div class="ui inverted buttoncolor button">
             <a href="<?= changeUrlByEnv("userlist.php") ?>" >チップをおくる</a> 
         </div>

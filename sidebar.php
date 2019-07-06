@@ -28,7 +28,7 @@
 
 <div class="flex-wrapper" style="display:flex">
             <div class="toc">
-                <div class="ui vertical inverted menu" style="height: 100vh;width: 270px; background:white;box-shadow:8px 0px 8px -1px rgba(0,0,0,0.05)">
+                <div class="ui vertical inverted menu" style="height: 100vh;width: 270px; background:white;border-right: solid 1px #f0f0f0;">
                 <div class="item" style="width: 100px;margin: auto;">
                     <a class="ui logo icon image" href="/">
                         <img src="./img/logo.png" width="60px;">

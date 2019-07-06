@@ -198,9 +198,6 @@ body {
       if(window.innerWidth < 616){
         location.href = "<?= changeUrlByEnv("") ?>" + "nosmartphone.php";
       }
-
-
-
   });
 
 

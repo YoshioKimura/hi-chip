@@ -1,3 +1,8 @@
+
+<?php
+include "funcs.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +14,11 @@
 <body style="background-color:#333">
 
     <p style="color:#fff">PCからご利用下さい</p>
+    <script>
+      if(window.innerWidth > 616){
+        location.href = "<?= changeUrlByEnv("") ?>" + "timeline.php";
+      }
     
+    </script>
 </body>
 </html>

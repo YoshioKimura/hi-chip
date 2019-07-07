@@ -28,8 +28,6 @@ function changeUrlByEnv($path){
 	}
 }
 
-
-
 function redirect($page){
     header("Location: ".$page);
     exit;
@@ -50,6 +48,22 @@ function chkSsid(){
         session_regenerate_id(true);
         $_SESSION["chk_ssid"] = session_id();
     }
+}
+
+function getEmailByUserId($pdo , $user_id){
+	$stmt = $pdo->prepare('SELECT email FROM gs_user_table WHERE user_id= :user_id');
+    $stmt->bindValue(':user_id', $user_id, PDO::PARAM_STR);
+	$status = $stmt->execute();
+	$val = $stmt->fetch();
+	return $val["email"];
+}
+
+function getNameByUserId($pdo , $user_id){
+	$stmt = $pdo->prepare('SELECT name FROM gs_user_table WHERE user_id= :user_id');
+    $stmt->bindValue(':user_id', $user_id, PDO::PARAM_STR);
+	$status = $stmt->execute();
+	$val = $stmt->fetch();
+	return $val["name"];
 }
 
 function renderTotalPointThisMonth($pdo){

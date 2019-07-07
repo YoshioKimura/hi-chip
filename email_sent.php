@@ -1,6 +1,7 @@
 <?php 
 session_start();
 include "funcs.php";
+$pdo = db_con();
 
 ?>
 
@@ -61,7 +62,7 @@ include "funcs.php";
   <div class="send-finished-chip"><?= $_SESSION["email_register"]; ?>に認証用のメールを送りました！</div>
   <div class="sent-redilect"> 
       <!-- <a href="timeline.php">トップへ戻る</a>  -->
-      <!-- <h1>メールが送信されました。</h1> -->
+      <h1>メールが送信されました。</h1>
   </div>
 </div>
 

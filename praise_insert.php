@@ -55,6 +55,11 @@ if ($status == false || $status2 == false) {
     sqlError($stmt);
     sqlError($stmt2);
 } else {
+    $to = getEmailByUserId($pdo, $praisee_id);
+    $subject = "【HiChip】".getNameByUserId($pdo, $praiser_id)."さんからポイントが届きました！";
+    $message = "".getNameByUserId($pdo, $praiser_id)."さんからポイントが届きました！\n\nこちらのURLからもらったメッセージをご確認ください。\n".changeUrlByEnv('timeline.php')."\n\n今後ともどうぞよろしくお願い致します。\n";
+    $headers = "".getNameByUserId($pdo, $praisee_id)."さん";
+    mail($to,$subject,$message,$headers);
     //５．index.phpへリダイレクト
     redirect("send_finished.php");
 }

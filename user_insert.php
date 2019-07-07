@@ -31,7 +31,7 @@ if ($status == false) {
     $to = $_SESSION["email_register"];
     $subject = "【HiChip】ログイン画面を送付しました。";
     $message = "登録ありがとうございます。\n開発者の木村です。\n\nこちらのURLからログインをお願いいたします。\n".changeUrlByEnv('login.php')."\n\n要望などがあればご気軽に info@call.jp までご連絡下さい。\n今後ともどうぞよろしくお願い致します。\n";
-    $headers = $name."様";
+    $headers = $name."さま";
     mail($to,$subject,$message,$headers);
     //５．email_sent.phpへリダイレクト
     redirect("email_sent.php");

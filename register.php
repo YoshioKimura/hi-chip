@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
    <meta charset="UTF-8">
@@ -30,9 +30,7 @@
 </style>
 
 <body>
-    <?php
-        include "header2.php";
-    ?>
+    <?php include "header2.php"; ?>
       
     <div class="ui middle aligned center aligned grid maxwidth centered">
         <div class="column" style="margin-bottom: 260px;">

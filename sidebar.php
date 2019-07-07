@@ -30,7 +30,7 @@
             <div class="toc">
                 <div class="ui vertical inverted menu" style="height: 100vh;width: 270px; background:white;border-right: solid 1px #f0f0f0;">
                 <div class="item" style="width: 100px;margin: auto;">
-                    <a class="ui logo icon image" href="/">
+                    <a class="ui logo icon image">
                         <img src="./img/logo.png" width="60px;">
                     </a>
                 </div>

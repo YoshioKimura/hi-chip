@@ -4,8 +4,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
-<!-- いつかモーダルを使うとき用（断念） -->
-<!-- <script src="js/modal.min.js"></script> -->
+
 
 <style>
     .ui.large.menu{
@@ -72,23 +71,9 @@
 </style>
 
 </head>
-<body id="main">
 
   <div class="ui inverted large borderless fluid menu column h20" style="background-color:#ffffffe6;box-shadow:8px 12px 8px -1px rgba(0,0,0,0.05);min-height: 3.857143em;" >
     <div class="logo">
         <img src="img/logo.png" alt="">
     </div>
-
-
-</div>
-<script>
-        // $(document).ready(function () {
-            $('.dropdown').dropdown();
-            
-        // });
-    
-</script>
-
-
-
-<!-- Head[End] -->
+  </div>
